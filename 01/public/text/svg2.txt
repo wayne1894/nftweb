@@ -1,0 +1,41 @@
+   <div class="conveyor_svg_class2">
+                   <div id="u8">
+
+                   </div>
+                    <div id="u9">
+
+                   </div>
+                   <div id="u10">
+
+                   </div>
+                   <div id="u11">
+
+                   </div>
+                   <div id="u12">
+
+                   </div>
+                 </div>
+                  <svg id="conveyor_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 821 762"><defs><style>.cls-1,.cls-15{fill:#e5e4e3;}.cls-12,.cls-2,.cls-6{fill:#3f3a39;}.cls-10,.cls-13,.cls-3{fill:none;stroke:#3f3a39;stroke-miterlimit:10;}.cls-19,.cls-3{opacity:0.2;}.cls-4{fill:#e5c8c3;}.cls-5{fill:#ba4147;}.cls-6{font-size:36px;}.cls-11,.cls-12,.cls-15,.cls-6,.cls-7,.cls-77,.cls-9{font-family:HanWangHeiHeavy2,Microsoft JhengHei;font-weight: bold;}.cls-6,.cls-7{letter-spacing:1px;}.cls-7{font-size:24px;fill:#704848;}.cls-11,.cls-8,.cls-9{font-size:16px;}.cls-8{font-family:DFYuanMedium-B52,Microsoft JhengHei;font-weight: bold;}.cls-20,.cls-9{fill:#e2695b;}.cls-11{letter-spacing:0.67px;}.cls-12{font-size:22px;}.cls-13{stroke-width:2px;}.cls-14{fill:#b7b2a7;opacity:0.5;}.cls-15{font-size:14px;}.cls-16{opacity:0.6;}.cls-17{fill:#f88823;}.cls-18{fill:#fede3c;}.cls-20{opacity:0.8;}.cls-21{fill:none;}.cls-22{fill:#E9907B;opacity:1}.cls-77{font-size:16px;font-weight: bold}</style></defs><rect class="cls-21" width="821" height="762"/><rect class="cls-2" x="36" y="412" width="108" height="24"/><rect class="cls-3" x="36" y="108" width="180" height="180"/><g id="u13"><image style="transform: translate(26px, 95px);" xlink:href="list/牛排.svg" height="200" width="200"/></g><text id="u2" class="cls-6" transform="translate(89.1 340.83)"></text>
+
+      
+     <g id="u3"><text class="cls-11" transform="translate(63.6 391.8) scale(1.5 1)">難度：中等</text><rect class="cls-10" x="36" y="372" width="180" height="28"/></g><g id="u1"><text class="cls-12" transform="translate(44.99 83)">001</text><rect class="cls-13" x="36" y="60" width="60" height="30"/><rect class="cls-2" x="108" y="60" width="2" height="30"/><path class="cls-2" d="M117,90h-1V60h1V90Zm-5,0h-1V60h1V90Z"/><rect class="cls-2" x="119" y="60" width="3" height="30"/><rect class="cls-2" x="124" y="60" width="1" height="30"/><path class="cls-2" d="M132,90h-2V60h2V90Zm-4,0h-2V60h2V90Z"/><rect class="cls-2" x="134" y="60" width="3" height="30"/><rect class="cls-2" x="139" y="60" width="1" height="30"/><rect class="cls-2" x="141" y="60" width="2" height="30"/><rect class="cls-2" x="145" y="60" width="1" height="30"/><rect class="cls-2" x="148" y="60" width="3" height="30"/><rect class="cls-2" x="152" y="60" width="2" height="30"/><rect class="cls-2" x="156" y="60" width="3" height="30"/><rect class="cls-2" x="161" y="60" width="1" height="30"/><rect class="cls-2" x="163" y="60" width="2" height="30"/><rect class="cls-2" x="168" y="60" width="3" height="30"/><rect class="cls-2" x="172" y="60" width="1" height="30"/><rect class="cls-2" x="174" y="60" width="2" height="30"/></g>
+      <g id="u14">
+      <path class="cls-14" d="M282.83,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C290.33,128.33,290.33,125,282.83,125Z"/>
+      <path class="cls-14" d="M312.83,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C320.33,128.33,320.33,125,312.83,125Z"/>
+      <path class="cls-14" d="M342.83,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C350.33,128.33,350.33,125,342.83,125Z"/>
+      <path class="cls-14" d="M372.83,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C380.33,128.33,380.33,125,372.83,125Z"/>
+      <path class="cls-14" d="M402.83,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C410.33,128.33,410.33,125,402.83,125Z"/>
+      </g>
+      <g id="u15">
+      <path class="cls-14" d="M464.5,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C472,128.33,472,125,464.5,125Z"/>
+      <path class="cls-14" d="M494.5,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C502,128.33,502,125,494.5,125Z"/>
+      <path class="cls-14" d="M524.5,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C532,128.33,532,125,524.5,125Z"/>
+      <path class="cls-14" d="M554.5,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C562,128.33,562,125,554.5,125Z"/>
+      <path class="cls-14" d="M584.5,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C592,128.33,592,125,584.5,125Z"/>
+      </g>
+      <g id="u16">
+       <path class="cls-14" d="M646.17,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C653.67,128.33,653.67,125,646.17,125Z"/>
+        <path class="cls-14" d="M676.17,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C683.67,128.33,683.67,125,676.17,125Z"/>
+        <path class="cls-14" d="M706.17,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C713.67,128.33,713.67,125,706.17,125Z"/>
+        <path class="cls-14" d="M736.17,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C743.67,128.33,743.67,125,736.17,125Z"/>
+        <path class="cls-14" d="M766.17,125c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C773.67,128.33,773.67,125,766.17,125Z"/></g><text class="cls-15" transform="translate(60.95 430)">火力需求</text><text class="cls-77" transform="translate(326.83 72.81)">熱量</text><text class="cls-77" transform="translate(492.5 72.81)">烤的時間</text><text class="cls-77" transform="translate(674.17 72.81)">必吃程度</text><g class="cls-16"><text id="u5" class="cls-8" transform="translate(286.83 103.81)">157kcal / 100g</text></g><g class="cls-16"><text id="u6" class="cls-8" transform="translate(504.5 103.81)">3分鐘</text></g><g class="cls-16"><text id="u7" class="cls-8" transform="translate(690.17 103.81)">普通</text></g><g id="u4"><path class="cls-17" d="M158,432a7.41,7.41,0,0,1,0-10.22,2.78,2.78,0,0,0,.68,2c0.51-4.77,4.09-3.41,4.26-7.82q2.21,1.69,2.21,5.78a3.06,3.06,0,0,1,2-2,4.08,4.08,0,0,0,.51,3.83,7.4,7.4,0,0,1,1,2.81c0.17,1.19.17,2.89-1.87,5.62"/><path class="cls-18" d="M165.88,432a4.94,4.94,0,0,0,.48-3.38,13.31,13.31,0,0,0-.8-1.85,1.62,1.62,0,0,1,.14-1.59,1.7,1.7,0,0,0-1.53,1.36c0-1.36-1.36-3.41-1.7-3.41,0.34,2-2.39,2-2.39,4.77a2.27,2.27,0,0,1-.51-1.36c-1.53.68-1.53,4.09-.51,5.45"/><path class="cls-17" d="M176.85,432a7.41,7.41,0,0,1,0-10.22,2.77,2.77,0,0,0,.68,2c0.51-4.77,4.09-3.41,4.26-7.82q2.21,1.69,2.21,5.78a3.06,3.06,0,0,1,2-2,4.08,4.08,0,0,0,.51,3.83,7.38,7.38,0,0,1,1,2.81c0.17,1.19.17,2.89-1.87,5.62"/><path class="cls-18" d="M184.69,432a4.93,4.93,0,0,0,.48-3.38,13.08,13.08,0,0,0-.79-1.85,1.62,1.62,0,0,1,.14-1.59,1.7,1.7,0,0,0-1.53,1.36c0-1.36-1.36-3.41-1.7-3.41,0.34,2-2.38,2-2.38,4.77a2.26,2.26,0,0,1-.51-1.36c-1.53.68-1.53,4.09-.51,5.45"/><path class="cls-17" d="M195.66,432a7.41,7.41,0,0,1,0-10.22,2.78,2.78,0,0,0,.68,2c0.51-4.77,4.09-3.41,4.26-7.82q2.21,1.69,2.21,5.78a3.06,3.06,0,0,1,2-2,4.08,4.08,0,0,0,.51,3.83,7.4,7.4,0,0,1,1,2.81c0.17,1.19.17,2.89-1.87,5.62"/><path class="cls-18" d="M203.5,432a4.93,4.93,0,0,0,.48-3.38,13.28,13.28,0,0,0-.8-1.85,1.62,1.62,0,0,1,.14-1.59,1.7,1.7,0,0,0-1.53,1.36c0-1.36-1.36-3.41-1.7-3.41,0.34,2-2.38,2-2.38,4.77a2.26,2.26,0,0,1-.51-1.36c-1.53.68-1.53,4.09-.51,5.45"/></g><g class="cls-19"><line class="cls-10" x1="252" y1="120" x2="252" y2="60"/><line class="cls-10" x1="433.67" y1="120" x2="433.67" y2="60"/><line class="cls-10" x1="615.33" y1="120" x2="615.33" y2="60"/><line class="cls-10" x1="797" y1="120" x2="797" y2="60"/></g></svg>

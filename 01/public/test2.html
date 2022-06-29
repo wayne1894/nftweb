@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TweenMax_Scroll</title>
+    <link rel="stylesheet" href="../lib/css/normalize.min.css">
+    <link rel="stylesheet" href="../lib/css/pageScroll.css">
+    <style>
+    body {
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="javascript:;">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+    </nav>
+    <main>
+        <section>
+            <div>Section 1</div>
+        </section>
+        <section>
+            <div>Section 2</div>
+        </section>
+        <section>
+            <div>Section 3</div>
+        </section>
+        <section>
+            <div>Section 4</div>
+        </section>
+    </main>
+</body>
+
+</html>
+<script type="text/javascript" src="../lib/js/jquery.1.11.3.min.js"></script>
+<script type="text/javascript" src="../lib/js/gsap/TweenMax.min.js"></script>
+<script type="text/javascript" src="../lib/js/gsap/plugins/ScrollToPlugin.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("nav a").click(function() {
+        if ($(this).hasClass("active")) return;
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        TweenMax.to(window, 0.5, {
+            scrollTo: {
+                y: $("section").eq(index).offset().top
+            }
+        });
+    }).eq(0).click();
+})
+</script>

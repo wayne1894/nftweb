@@ -1,0 +1,131 @@
+
+<script>
+   
+    
+  
+
+   
+
+  $(function(){
+    
+    _init();
+
+  var number = 0;
+  
+     var img_length = $("img").length;
+     $("img").on('load', function(event){
+      number= number + 1;
+    ccc(number+","+img_length)
+      $("#loading .logo_1").html( Math.round(number/img_length * 100) + "%")
+    });
+ 
+  })
+  
+
+  function _init(){
+    $("body").removeClass("init");
+  return
+     $("#lightbox1").animate({opacity : 0},800,function(){
+
+       $("#lightbox1").remove();
+       $("#loading").animate({opacity : 0},300,function(){
+         $("body").css( "background-color","transparent").css("overflow-y","")
+          $("#loading").remove();
+       });
+     });
+  }
+</script>
+
+<style>
+
+ @-webkit-keyframes loading2 {
+   0% {
+    transform: translateY(15px);
+    opacity: .7;
+   }
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+  }
+  
+@keyframes loading2 {
+   0% {
+/*    bottom: 0px;*/
+     transform: translateY(15px);
+/*    transform: scale(1, 1);*/
+    opacity: .7;
+  }
+
+  100% {
+/*    bottom: 15px;*/
+      transform: translateY(0px);
+/*    transform: scale(1.15, 1.15);*/
+    opacity: 1;
+  }
+}
+  body.init{
+    overflow-y: hidden;
+    background-color: #E2695B;
+  }
+  body.init>*{
+    display: none;
+  }
+  .log/o_1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     animation: loading2 .95s infinite alternate;
+    -moz-animation: loading2 .95s infinite alternate;
+    -webkit-animation: loading2 .95s infinite alternate;
+/*    animation-direction:alternate-reverse;*/
+    animation-timing-function: ease-in-out;
+  }
+  .logo_1{
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+  }
+  #loading{
+    z-index: 10001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 75px;
+    margin-left: -70px;
+    margin-top: -40px;
+    opacity: 1;
+    display: block;
+  }
+  #lightbox1{
+    opacity:1;
+    position: fixed;
+    top: 0; left: 0;right: 0;bottom: 0;
+    z-index: 10000;
+    background-color: #E2695B;
+    display: block;
+  }
+ ::selection {
+    background-color: #E2695B;
+    color: #ffffff;
+  }
+  ::-moz-selection {
+    background-color: #E2695B;
+    color: #ffffff;
+  }
+  img::selection {
+  background: transparent;
+  }
+  img::-moz-selection {
+  background: transparent;
+  }
+
+</style>
+
+<div id="loading">
+  <div class="logo_1">0%</div>
+</div>
+<div id="lightbox1"></div>

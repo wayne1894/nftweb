@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<style>
+  .a10{
+    visibility: visible!important;
+    opacity: 1!important;
+  }  
+</style>
+<body>
+
+<div>
+  <h1 class="headline">
+      Widget Inc.
+  </h1>
+  <div class="a1" style="margin-top: 85px;">
+    ddddd
+  </div>
+    <div class="a1" style="margin-top:  85px;">
+    ddddd2
+  </div>
+    <div class="a2" style="margin-top:  85px;">
+    ddddd3
+  </div>
+    <div class="a3" style="margin-top:  85px;">
+    ddddd4
+  </div>
+    <div class="a4" style="margin-top:  85px;">
+    ddddd5
+  </div>
+    <div class="a5" style="margin-top:  85px;">
+    ddddd6
+  </div>
+    <div class="a6" style="margin-top:  85px;">
+    ddddd7
+  </div>
+    <div class="a7" style="margin-top:  185px;">
+    ddddd6
+  </div>
+    <div class="a8" style="margin-top:  185px;">
+    ddddd7
+  </div>
+      <div class="a9" style="margin-top:  185px;">
+    ddddd6
+  </div>
+    <div class="a10" style="margin-top:  185px;">
+    ddddd7
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script>
+  ScrollReveal({ reset: true });
+ ScrollReveal().reveal('.a1',{ afterReveal: function(){console.log("a1")} });
+ScrollReveal().reveal('.a2',{ afterReveal: function(){console.log("a2")} });
+ScrollReveal().reveal('.a3',{ afterReveal: function(){console.log("a3")} });
+  ScrollReveal().reveal('.a10',{ beforeReveal: function(){console.log("a10")} });
+</script>
+</body>
+</html>

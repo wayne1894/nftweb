@@ -1,0 +1,44 @@
+<svg id="conveyor_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.17 280"><defs><style>.cls-1,.cls-11,.cls-5{fill:#3f3a39;}.cls-111{fill:#3f3a39;}.cls-12,.cls-2,.cls-9{fill:none;stroke:#3f3a39;stroke-miterlimit:10;}.cls-2{opacity:0.2;}.cls-3{fill:#e5c8c3;}.cls-4{fill:#ba4147;}.cls-5{font-size:24px;}.cls-10,.cls-11,.cls-15,.cls-16,.cls-5,.cls-6,.cls-8{font-family:DFYuanMedium-B52,Microsoft JhengHei;font-weight: bold;}.cls-5,.cls-6{letter-spacing:1px;}.cls-6{font-size:20px;fill:#704848;}.cls-7{font-size:14px;}.cls-18,.cls-7{font-family:DFYuanMedium-B52,Microsoft JhengHei;font-weight: bold;}.cls-8{font-size:16px;fill:#e2695b;}.cls-10{font-size:10.67px;font-family:DFYuanMedium-B52,Microsoft JhengHei;font-weight: bold;}.cls-11{font-size:14.67px;}.cls-12{stroke-width:2px;}.cls-13{fill:#e9907b;}.cls-14{fill:#b7b2a7;opacity:0.5;}.cls-22{fill:#E9907B;opacity:1}.cls-15{font-size:9.33px;fill:#e5e4e3;}.cls-16,.cls-18{font-size:13.33px;}.cls-17{opacity:0.6;}.cls-19{fill:#f88823;}.cls-20{fill:#fede3c;}</style></defs><rect class="cls-111" x="1" y="235.66" width="72" height="16"/><rect class="cls-2" x="1" y="33" width="120" height="120"/>
+       <g id="u13"><image style="transform: translate(-14px, 18px);" xlink:href="" height="150" width="150"></image></g>
+       <text id="u2" class="cls-5" transform="translate(36.4 188.22)">牛排</text>      
+       <g id="u3"><text class="cls-10" transform="translate(19.4 221.54) scale(1.5 1)">難度：中等</text><rect class="cls-9" x="1" y="209" width="120" height="18.67"/></g>
+
+<g id="u1">
+       <text class="cls-11" transform="translate(6.99 15.41)">001</text><rect class="cls-12" x="1" y="1" width="40" height="20"/><rect class="cls-1" x="49" y="1" width="1.33" height="20"/><path class="cls-1" d="M3279,1050h-0.67v-20H3279v20Zm-3.33,0H3275v-20h0.67v20Z" transform="translate(-3224 -1029)"/><rect class="cls-1" x="56.33" y="1" width="2" height="20"/><rect class="cls-1" x="59.67" y="1" width="0.67" height="20"/><path class="cls-1" d="M3289,1050h-1.33v-20H3289v20Zm-2.67,0H3285v-20h1.33v20Z" transform="translate(-3224 -1029)"/><rect class="cls-1" x="66.33" y="1" width="2" height="20"/><rect class="cls-1" x="69.67" y="1" width="0.67" height="20"/><rect class="cls-1" x="71" y="1" width="1.33" height="20"/><rect class="cls-1" x="73.67" y="1" width="0.67" height="20"/><rect class="cls-1" x="75.67" y="1" width="2" height="20"/><rect class="cls-1" x="78.33" y="1" width="1.33" height="20"/><rect class="cls-1" x="81" y="1" width="2" height="20"/><rect class="cls-1" x="84.33" y="1" width="0.67" height="20"/><rect class="cls-1" x="85.67" y="1" width="1.33" height="20"/><rect class="cls-1" x="89" y="1" width="2" height="20"/><rect class="cls-1" x="91.67" y="1" width="0.67" height="20"/><rect class="cls-1" x="93" y="1" width="1.33" height="20"/>
+   </g>
+       <g id="u14">
+       <path class="cls-14" d="M3400.83,1119.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3408.33,1122.5,3408.33,1119.17,3400.83,1119.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3430.83,1119.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3438.33,1122.5,3438.33,1119.17,3430.83,1119.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3460.83,1119.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3468.33,1122.5,3468.33,1119.17,3460.83,1119.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3490.83,1119.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3498.33,1122.5,3498.33,1119.17,3490.83,1119.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3520.83,1119.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3528.33,1122.5,3528.33,1119.17,3520.83,1119.17Z" transform="translate(-3224 -1029)"/>
+         </g>
+       <text class="cls-15" transform="translate(17.63 246.47)">火力需求</text><text class="cls-16" transform="translate(223.5 43.68)">熱量</text><g class="cls-17"><text id="u5" class="cls-18" transform="translate(190.17 69.51)">157kcal / 100g</text></g>
+       <g id="u4">
+           <path class="cls-19" d="M3306.36,1278a4.94,4.94,0,0,1,0-6.81,1.85,1.85,0,0,0,.45,1.36c0.34-3.18,2.73-2.27,2.84-5.22a4.55,4.55,0,0,1,1.48,3.85,2,2,0,0,1,1.36-1.36,2.72,2.72,0,0,0,.34,2.55,5,5,0,0,1,.68,1.88c0.11,0.79.11,1.93-1.25,3.75" transform="translate(-3224 -1029)"/><path class="cls-20" d="M3311.59,1278a3.28,3.28,0,0,0,.32-2.25,8.89,8.89,0,0,0-.53-1.23,1.08,1.08,0,0,1,.09-1.06,1.13,1.13,0,0,0-1,.91,3.49,3.49,0,0,0-1.14-2.27c0.23,1.36-1.59,1.36-1.59,3.18a1.51,1.51,0,0,1-.34-0.91c-1,.45-1,2.73-0.34,3.63" transform="translate(-3224 -1029)"/><path class="cls-19" d="M3318.9,1278a4.94,4.94,0,0,1,0-6.81,1.85,1.85,0,0,0,.46,1.36c0.34-3.18,2.73-2.27,2.84-5.22a4.55,4.55,0,0,1,1.48,3.85,2,2,0,0,1,1.36-1.36,2.72,2.72,0,0,0,.34,2.55,4.94,4.94,0,0,1,.68,1.88c0.11,0.79.11,1.93-1.25,3.75" transform="translate(-3224 -1029)"/><path class="cls-20" d="M3324.13,1278a3.28,3.28,0,0,0,.32-2.25,8.78,8.78,0,0,0-.53-1.23,1.08,1.08,0,0,1,.1-1.06,1.13,1.13,0,0,0-1,.91,3.49,3.49,0,0,0-1.14-2.27c0.23,1.36-1.59,1.36-1.59,3.18a1.51,1.51,0,0,1-.34-0.91c-1,.45-1,2.73-0.34,3.63" transform="translate(-3224 -1029)"/><path class="cls-19" d="M3331.44,1278a4.94,4.94,0,0,1,0-6.81,1.85,1.85,0,0,0,.45,1.36c0.34-3.18,2.73-2.27,2.84-5.22a4.55,4.55,0,0,1,1.48,3.85,2,2,0,0,1,1.36-1.36,2.72,2.72,0,0,0,.34,2.55,4.94,4.94,0,0,1,.68,1.88c0.11,0.79.11,1.93-1.25,3.75" transform="translate(-3224 -1029)"/>
+           <path class="cls-20" d="M3336.67,1278a3.29,3.29,0,0,0,.32-2.25,8.77,8.77,0,0,0-.53-1.23,1.08,1.08,0,0,1,.09-1.06,1.13,1.13,0,0,0-1,.91,3.49,3.49,0,0,0-1.13-2.27c0.23,1.36-1.59,1.36-1.59,3.18a1.51,1.51,0,0,1-.34-0.91c-1,.45-1,2.73-0.34,3.63" transform="translate(-3224 -1029)"/>
+       </g>
+       <line class="cls-2" x1="146" y1="85" x2="146" y2="33"/><line class="cls-2" x1="327.67" y1="85" x2="327.67" y2="33"/>
+        <g id="u15">
+       <path class="cls-14" d="M3400.83,1201.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3408.33,1204.5,3408.33,1201.17,3400.83,1201.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3430.83,1201.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3438.33,1204.5,3438.33,1201.17,3430.83,1201.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3460.83,1201.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3468.33,1204.5,3468.33,1201.17,3460.83,1201.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3490.83,1201.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3498.33,1204.5,3498.33,1201.17,3490.83,1201.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3520.83,1201.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3528.33,1204.5,3528.33,1201.17,3520.83,1201.17Z" transform="translate(-3224 -1029)"/>
+         </g>
+       
+       <text class="cls-16" transform="translate(210.17 125.68)">烤的時間</text><g  class="cls-17"><text id="u6" class="cls-18" transform="translate(220.17 151.51)"></text></g><line class="cls-2" x1="146" y1="167" x2="146" y2="115"/><line class="cls-2" x1="327.67" y1="167" x2="327.67" y2="115"/>
+       
+       <g id="u16">
+       <path class="cls-14" d="M3400.83,1283.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3408.33,1286.5,3408.33,1283.17,3400.83,1283.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3430.83,1283.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3438.33,1286.5,3438.33,1283.17,3430.83,1283.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3460.83,1283.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3468.33,1286.5,3468.33,1283.17,3460.83,1283.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3490.83,1283.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3498.33,1286.5,3498.33,1283.17,3490.83,1283.17Z" transform="translate(-3224 -1029)"/><path class="cls-14" d="M3520.83,1283.17c-7.5,0-7.5,3.33-15,3.33v3.17c7.5,0,7.5-3.33,15-3.33s7.5,3.33,15,3.33v-3.17C3528.33,1286.5,3528.33,1283.17,3520.83,1283.17Z" transform="translate(-3224 -1029)"/>
+       </g>  
+       <text class="cls-16" transform="translate(210.17 207.68)">必吃程度</text><g class="cls-17"><text id="u7" class="cls-18" transform="translate(223.5 233.51)">普通</text></g><line class="cls-2" x1="146" y1="249" x2="146" y2="197"/><line class="cls-2" x1="327.67" y1="249" x2="327.67" y2="197"/></svg>
+       <div class="conveyor_svg_class">
+         <div id="u8">
+
+         </div>
+          <div id="u9">
+
+         </div>
+         <div id="u10">
+
+         </div>
+         <div id="u11">
+
+         </div>
+         <div id="u12">
+
+         </div>
+       </div>

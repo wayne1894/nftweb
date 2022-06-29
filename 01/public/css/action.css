@@ -1,0 +1,5 @@
+.action_1{
+  opacity: 1!important;
+  transform: scale(1)!important;
+  transition: opacity .5s cubic-bezier(.165,.84,.44,1),transform .5s cubic-bezier(.165,.84,.44,1)
+}
