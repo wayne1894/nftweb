@@ -7,5 +7,5 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [03 了解版本控管](https://docs.google.com/presentation/d/1ZsHeq90WHfhKPU7UQtRuEHJ5Ki2OasdN_sQsnH2ksW8/edit?usp=sharing)
 ### [04 網頁HTML元素-1](https://docs.google.com/presentation/d/18pzZR-fdwWIT4jcTKu8ZEDW74nGnyHPYB0iMgoBAz2Y/edit?usp=sharing)
 ### [05 NFT 圖片生成器](https://docs.google.com/presentation/d/1pSrZotp-OfuTaT1qXz924HRJri9v9f8irPWWviljmYY/edit?usp=sharing)
-### [06 網頁HTML元素-2](https://docs.google.com/presentation/d/1pSrZotp-OfuTaT1qXz924HRJri9v9f8irPWWviljmYY/edit?usp=sharing)
+### [06 網頁HTML元素-2](https://docs.google.com/presentation/d/1bLwdW21-zrWH-wClp_Zv7L-50yOZW9qcYSnSnFQpzRY/edit?usp=sharing)
 
