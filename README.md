@@ -8,4 +8,9 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [04 網頁HTML元素-1](https://docs.google.com/presentation/d/18pzZR-fdwWIT4jcTKu8ZEDW74nGnyHPYB0iMgoBAz2Y/edit?usp=sharing)
 ### [05 NFT 圖片生成器](https://docs.google.com/presentation/d/1pSrZotp-OfuTaT1qXz924HRJri9v9f8irPWWviljmYY/edit?usp=sharing)
 ### [06 網頁HTML元素-2](https://docs.google.com/presentation/d/1bLwdW21-zrWH-wClp_Zv7L-50yOZW9qcYSnSnFQpzRY/edit?usp=sharing)
-
+### [07 html 複習與補充整理](https://docs.google.com/presentation/d/1o5x_c6O2VCfy5nCcgTZ3J2ENB8rDEC64eoRrMlyZp6Q/edit?usp=sharing)
+### [08 css 網頁切版術 - 選擇器](https://docs.google.com/presentation/d/1WV4I01dOwo4WtSHU9mVYuyDjSXXcFm3WQ_Sg2aXBOBk/edit?usp=sharing)
+### 09 css 網頁切版術 - 基本屬性
+### 10 css 網頁切版術 - 盒子模型
+### 11 css 網頁切版術 - inline-block 排版
+### 12 css 網頁切版術 - float 排版
