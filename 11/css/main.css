@@ -8,8 +8,52 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-div.main{
+
+@font-face {
+    font-family: 'AbelRegular';
+    src: url('/fonts/abel-regular-webfont.eot');
+    src: url('/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/abel-regular-webfont.woff') format('woff'),  url('/fonts/abel-regular-webfont.ttf') format('truetype'),  url('/fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+}
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+}
+
+.main{
   width: 980px;
   margin: 0 auto;
-  background-color: red;
+  padding-top: 30px;
+}
+header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+header img{
+  width: 200px;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #898000;
+  border-bottom: 1px solid #8a8000;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+
+}
+nav>ul>li{
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+}
+nav>ul>li>a{
+  text-decoration: none;
+}
+nav>ul>li>a>span:first-child{
+  font-weight: bold;
+  color: #000;
+}
+nav>ul>li>a>span:last-child{
+  color: #898000;
 }
