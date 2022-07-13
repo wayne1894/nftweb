@@ -31,24 +31,30 @@ header{
 header img{
   width: 200px;
 }
+nav{
+  margin-bottom: 30px;
+}
 nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #898000;
-  border-bottom: 1px solid #8a8000;
   height: 80px;
   line-height: 80px;
   font-size: 28px;
-
 }
 nav>ul>li{
   display: inline-block;
   width: 33.3%;
   text-align: center;
+  border-top: 1px solid #898000;
+  border-bottom: 1px solid #8a8000;
 }
 nav>ul>li>a{
   text-decoration: none;
+  display: block;
+}
+nav>ul>li>a:hover{
+  background-color: #dcdddd;
 }
 nav>ul>li>a>span:first-child{
   font-weight: bold;
@@ -56,4 +62,40 @@ nav>ul>li>a>span:first-child{
 }
 nav>ul>li>a>span:last-child{
   color: #898000;
+}
+.index img{
+  width: 100%;
+}
+.shop .item{
+  border: 1px solid #898000;
+  border-bottom: none;
+  padding: 15px;
+}
+.shop .item:last-child{
+  border-bottom: 1px solid #898000;
+}
+.shop .item .left{
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+.shop .item .center{
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
+}
+.shop .item .right{
+  display: inline-block;
+  width: 38%;
+  vertical-align: top;
+}
+.shop .item a.item_buy{
+  text-decoration: none;
+  background-color: #898000;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+.shop .item a.item_buy:hover{
+  background-color: #000
 }
