@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('include/head.html',{
+    "css": "main_inner.css"
+  })
+  <link rel="stylesheet" type="text/css" href="src/build/css/news.css" />
+</head>
+<body class="init">
+ @@include('include/first.html')
+ @@include('include/nav.html')
+  <header class="header_inner">
+   @@include('include/header_inner.html',{
+      "bg": "src/static/images/bg3/top4.png"
+   })
+  </header>
+  <div class="main_inner">
+      <div class="top_menu small">
+         <div class="menu_wrap">
+           <ul class="top_style_1">
+             <li><a class="focus" href="#">所有訊息</a></li>
+             <li><a href="#">產品訊息</a></li>
+             <li><a href="#">活動快訊</a></li>
+             <li><a href="#">音樂教育</a></li>
+             <li><a href="#">重要通知</a></li>
+             <li><a href="#">促銷訊息</a></li>
+           </ul>
+        </div>
+      </div>
+      <div class="news">
+        <div class="inner_menu_wrap container small" style="top:-80px;">
+          <ul class="inner_menu_mobile">
+            <li class="c_d01a48">
+              <span>所有訊息</span>
+              <ol class="inner_ol">
+                 <li><a class="focus" href="#">所有訊息</a></li>
+                 <li><a href="#">產品訊息</a></li>
+                 <li><a href="#">活動快訊</a></li>
+                 <li><a href="#">音樂教育</a></li>
+                 <li><a href="#">重要通知</a></li>
+                 <li><a href="#">促銷訊息</a></li>
+              </ol>
+            </li>
+           </ul>
+        </div>
+        <div class="container">
+          <h2 class="h2 wow fadeIn" data-wow-duration="0.8s"><span class="wow fadeInLeft">搶先知道</span></h2>
+          <div class="news_wrap">
+            @@include('include/three_columns.html', {
+              "color_class": "c_d01a48",
+              "background-image": "src/static/images/bg/bg-35.png",
+              "area_button": "活動快訊",
+              "animate" : "fadeIn",
+              "wow-duration" : "1.2s",
+              "wow-delay" : "0.7s",
+               "wow-offset": "-50",
+              "three_time": "十一月 6, 2017",
+              "three_text": {
+                "h3": "10組頂尖世界音樂演出．100頂市集帳篷 音樂 × 草地野餐 × 手作創意 × 異國料理"
+              }
+            })
+            @@include('include/three_columns.html', {
+              "color_class": "c_cc9650",
+              "background-image": "src/static/images/bg/bg-36.png",
+              "area_button": "音樂教育",
+              "animate" : "fadeIn",
+              "wow-duration" : "1.5s",
+              "wow-delay" : "1s",
+               "wow-offset": "-50",
+              "three_time": "八月 24, 2017",
+              "three_text": {
+                "h3": "2017暑期招生活動正式開跑~獨家贈品限量發送"
+              }
+            })
+            @@include('include/three_columns.html', {
+              "color_class": "c_d01a48",
+              "background-image": "src/static/images/bg/bg-37.png",
+              "area_button": "活動快訊",
+              "animate" : "fadeIn",
+              "wow-duration" : "1.8s",
+              "wow-delay" : "1.3s",
+               "wow-offset": "-50",
+              "three_time": "八月 19, 2017",
+              "three_text": {
+                "h3": "功學社會員購票享9折優惠-日本音樂的繪本─動物樂團嘉年華"
+              }
+            })
+          </div>
+          <div class="border-hr"></div>
+          <div class="news_block white">
+             @@include('include/block_item.html', {
+              "color_class": "c_d01a48",
+              "background-image": "src/static/images/bg/bg-38.png",
+              "area_button": "活動快訊",
+              "animate" : "fadeIn",
+              "wow-duration" : "",
+              "wow-delay" : "",
+              "block_time": "八月 16, 2017",
+              "block_text": {
+                "h3": "邀您響應環保愛地球，於11/1起購物用塑膠袋將酌收費用，就可以對地球有大大的貢獻"
+              }
+            })
+            @@include('include/block_item.html', {
+              "color_class": "c_cc9650",
+              "background-image": "src/static/images/bg/bg-39.png",
+              "area_button": "產品消息",
+              "animate" : "fadeIn",
+              "wow-duration" : "",
+              "wow-delay" : "",
+              "block_time": "七月 29, 2017",
+              "block_text": {
+                "h3": "中古鋼琴買貴退差價活動開跑囉"
+              }
+            })
+            @@include('include/block_item.html', {
+              "color_class": "c_73bf00",
+              "background-image": "src/static/images/bg/bg-40.png",
+              "area_button": "音樂教育",
+              "animate" : "fadeIn",
+              "wow-duration" : "",
+              "wow-delay" : "",
+              "block_time": "六月 13, 2017",
+              "block_text": {
+                "h3": "公益起步奏入選名單"
+              }
+            })
+           @@include('include/block_item.html', {
+              "color_class": "c_d01a48",
+              "background-image": "src/static/images/bg/bg-38.png",
+              "area_button": "活動快訊",
+              "animate" : "fadeIn",
+              "wow-duration" : "",
+              "wow-delay" : "",
+              "block_time": "八月 16, 2017",
+              "block_text": {
+                "h3": "邀您響應環保愛地球，於11/1起購物用塑膠袋將酌收費用，就可以對地球有大大的貢獻"
+              }
+            })
+            @@include('include/block_item.html', {
+              "color_class": "c_cc9650",
+              "background-image": "src/static/images/bg/bg-39.png",
+              "area_button": "產品消息",
+              "animate" : "fadeIn",
+              "wow-duration" : "",
+              "wow-delay" : "",
+              "block_time": "七月 29, 2017",
+              "block_text": {
+                "h3": "中古鋼琴買貴退差價活動開跑囉"
+              }
+            })
+          </div>
+          <div class="pagination c_d01a48">
+            <a class="focus" href="#"><span>1</span></a>
+            <a href="#"><span>2</span></a>
+            <a href="#"><span>3</span></a>
+          </div>
+        </div>
+      </div>
+  </div>
+  @@include('include/footer.html',{
+    "color_class": "c_d01a48"
+  })
+  <script src="src/build/js/main_inner.js"></script>
+</body>
+</html>

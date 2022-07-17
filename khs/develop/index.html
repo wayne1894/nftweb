@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('include/head.html',{
+    "css": "main.css"
+  })
+  <link rel="stylesheet" type="text/css" href="src/build/css/movie_slider.css" />
+
+ <script type="text/javascript" src="src/static/js/skrollr.min.js"></script>
+ <script src="src/build/js/movie_slider.js"></script>
+
+</head>
+<body class="init">
+  @@include('include/first.html')
+  @@include('include/nav.html')
+  <header>
+    @@include('include/header.html')
+  </header>
+  
+  <div class="main">
+    <div class="service">
+      <h2 class="h2_index">
+        <div class="container">
+          <span data-wow-duration="1.2s" class="wow fadeInRight">服務項目</span>
+        </div>
+      </h2>
+      <div class="service_wrap">
+        <div class="container">
+          @@include('include/two_columns.html', {
+            "color_class": "c_cc9650",
+            "background-image": "src/static/images/bg/bg-33.png",
+            "background-image2": "svg_obj1",
+            "animate" : "fadeIn2",
+            "wow-duration" : "1s",
+            "wow-delay" : "0.5s",
+            "two_text": {
+              "h3": "產品介紹",
+              "p" : "鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。"
+            },
+            "link" : "product.html"
+          })
+          @@include('include/two_columns.html', {
+            "color_class": "c_73bf00",
+            "background-image": "src/static/images/bg/bg-34.png",
+            "background-image2": "svg_obj2",
+            "animate" : "fadeIn2",
+            "wow-duration" : "1s",
+            "wow-delay" : "0.8s",
+            "two_text": {
+              "h3": "音樂教育",
+              "p" : "教材、指導法經歷50年以上的研究，世界通用，在全國教室皆可銜接課程，是最完整的幼兒智能發展課程。"
+            },
+             "link" : "music.html"
+          })
+
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="container">
+        <h2 class="h2 wow fadeIn" data-wow-duration="1.2s"><span class="wow fadeInLeft">最新消息</span></h2>
+        <div class="news_wrap">
+          @@include('include/three_columns.html', {
+            "color_class": "c_d01a48",
+            "background-image": "src/static/images/bg/bg-35.png",
+            "area_button": "活動快訊",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-delay" : "0.3s",
+            "wow-offset": "-50",
+            "three_time": "十一月 6, 2017",
+            "three_text": {
+              "h3": "10組頂尖世界音樂演出．100頂市集帳篷 音樂 × 草地野餐 × 手作創意 × 異國料理"
+            }
+          })
+          @@include('include/three_columns.html', {
+            "color_class": "c_cc9650",
+            "background-image": "src/static/images/bg/bg-36.png",
+            "area_button": "音樂教育",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-offset": "-50",
+            "wow-delay" : "0.6s",
+            "three_time": "八月 24, 2017",
+            "three_text": {
+              "h3": "2017暑期招生活動正式開跑~獨家贈品限量發送"
+            }
+          })
+          @@include('include/three_columns.html', {
+            "color_class": "c_d01a48",
+            "background-image": "src/static/images/bg/bg-37.png",
+            "area_button": "活動快訊",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-offset": "-50",
+            "wow-delay" : "0.9s",
+            "three_time": "八月 19, 2017",
+            "three_text": {
+              "h3": "功學社會員購票享9折優惠-日本音樂的繪本─動物樂團嘉年華"
+            }
+          })
+        </div>
+        <div class="news_block">
+           @@include('include/block_item.html', {
+            "color_class": "c_d01a48",
+            "background-image": "src/static/images/bg/bg-38.png",
+            "area_button": "活動快訊",
+            "animate" : "fadeIn",
+            "wow-duration" : "",
+            "wow-delay" : "",
+            "block_time": "八月 16, 2017",
+            "block_text": {
+              "h3": "邀您響應環保愛地球，於11/1起購物用塑膠袋將酌收費用，就可以對地球有大大的貢獻"
+            }
+          })
+          @@include('include/block_item.html', {
+            "color_class": "c_cc9650",
+            "background-image": "src/static/images/bg/bg-39.png",
+            "area_button": "產品消息",
+            "animate" : "fadeIn",
+            "wow-duration" : "",
+            "wow-delay" : "",
+            "block_time": "七月 29, 2017",
+            "block_text": {
+              "h3": "中古鋼琴買貴退差價活動開跑囉"
+            }
+          })
+          @@include('include/block_item.html', {
+            "color_class": "c_73bf00",
+            "background-image": "src/static/images/bg/bg-40.png",
+            "area_button": "音樂教育",
+            "animate" : "fadeIn",
+            "wow-duration" : "",
+            "wow-delay" : "",
+            "block_time": "六月 13, 2017",
+            "block_text": {
+              "h3": "公益起步奏入選名單"
+            }
+          })
+
+        </div>
+      </div>
+    </div>
+    
+    @@include('include/contact_us.html')
+    <div data-start="top:-3.5%" data-800="top:0%" data-1000="top:0%" data-1500="top:2.5%" class="m_bg">
+       <img src="src/static/images/bg7.png" alt="">
+       <div class="bg_w"><img src="src/static/images/bg8.png" alt=""></div>
+    </div>
+  </div>
+    @@include('include/footer.html',{
+      "color_class": "c_d01a48"
+    })
+  
+</body>
+</html>

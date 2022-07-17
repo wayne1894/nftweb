@@ -1,0 +1,69 @@
+<div class="contact_us" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -180px;" data-bottom-top="background-position: 50% 180px;">
+ <div class="svg7"></div>
+  <div class="container">
+     <h2 class="contact_h2">聯絡功學社</h2>
+     <div class="f_columns top">
+        <p class="f_columns_area_l">歡迎來到功學社，若您有任何建議與諮詢，歡迎利用下方表單，我們將由專人儘快為您服務，謝謝。</p>
+        <div class="import_txt f_columns_area_r">*為必填項目</div>
+     </div>
+     <div class="contact_form">
+       <div class="f_columns_left">
+         <div class="f_columns_wrap import"><input type="text" placeholder="姓名"></div>
+         <div class="f_columns_wrap import"><input type="text" placeholder="地址"></div>
+         <div class="f_columns_wrap import"><input type="text" placeholder="電話"></div>
+         <div class="f_columns_wrap import email"><input type="text" placeholder="Email"></div>
+       </div>
+       <div class="f_columns_right">
+         <div class="f_columns_wrap">
+           <div class="f_columns_r_left">
+              <div class="select_wrap">
+                <select>
+                  <option value="" selected>我要詢問</option>
+                  <option value="01">問題1</option>
+                  <option value="01">問題2</option>
+                  <option value="01">問題3</option>
+                </select>
+              </div>
+           </div>
+           <div class="f_columns_r_right import">
+             <input type="text" placeholder="主旨">
+           </div>
+         </div>
+         <div class="f_columns_wrap import textarea">
+           <textarea rows="4" cols="50" placeholder="問題描述"></textarea>
+         </div>
+       </div>
+       <div class="f_columns btoom">
+         <div class="f_columns_area_l ischeckbox import">
+					<input id="readContract" type="checkbox" name="edm" value="1">
+					<label class="checkboxLabel" for="readContract">“本人同意所提供給功學社的資訊，將受到功學社集團與網站 網站使用説明所規範，本人已閱讀並了解上述條款。”</label>
+				</div>
+        <div class="f_columns_area_r">
+         <button class="area_button c_d01a48"><span>確認送出</span></button>
+         </div>
+       </div>
+     </div>
+  </div>
+  <div id="all_news" class="all_news c_d01a48">
+    <a href="news.html">全部新聞<span class="arrow"></span></a>
+  </div>
+</div>
+    
+<script>
+$(function(){
+  $(".contact_form input , .contact_form textarea").on("focus input",function(){
+    if($(this).val()==""){
+      $(this).parent().removeClass("Being_input").removeClass("Being_import");
+    }else{  $(this).parent().addClass("Being_input").addClass("Being_import");
+   }
+    
+  })
+  $(".contact_form input , .contact_form textarea").on("blur",function(){
+     $(this).parent().removeClass("Being_input");
+    if($(this).val()==""){
+      $(this).parent().removeClass("Being_import");
+    }
+  })
+  
+})
+</script>

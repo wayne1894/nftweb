@@ -1,0 +1,165 @@
+<script>
+//  if(window.attachEvent) {
+//    window.attachEvent('onload', _init);
+//  } else {
+//    window.onload = _init;
+//  }
+  $(function(){
+    _init();
+  })
+   //wow
+  //https://wowjs.uk/docs.html
+  //scrollReveal.js
+  //https://css-tricks.com/aos-css-driven-scroll-animation-library/
+  //http://scrollmagic.io/
+  //http://johnpolacek.github.io/superscrollorama/
+  //http://scrollmagic.io/
+  //使用Skrollr.js
+  
+  //https://stanhub.com/how-to-make-div-element-100-height-of-browser-window-using-css-only/   css 視差效果
+  
+//parallax DEMO ihatetomatoes.net/demos/simple-parallax-scrolling-tutorial/
+
+  var skrollr;
+  //var is_init = false ;
+  function _init(){
+//$(window).resize();
+//    if(msieversion()){
+//     
+//    }
+    //if(is_init) return;
+    //is_init = true;
+    $("body").removeClass("init");
+//    $("body").css("overflow-y","hidden");
+    $(".left").css("height",$(".right").height());
+    if(!is_mobileAndTabletcheck){
+      new WOW().init();
+      if(skrollr)skrollr.init();
+    }
+       $("#lightbox1").animate({opacity : 0},800, 'easeInQuint',function(){
+
+         $("#lightbox1").remove();
+         $("#loading").animate({opacity : 0},300, 'easeOutCubic',function(){
+           $("body").css( "background-color","transparent").css("overflow-y","")
+            $("#loading").remove();
+         });
+       });
+  }
+</script>
+
+<style>
+  
+  
+/*https://www.puritys.me/docs-blog/article-353-CSS-3D-%E6%97%8B%E8%BD%89-rotate3d-%E8%88%87-translate3d.html*/
+/*
+@keyframes loading {
+   0% {
+     transform: perspective(500px) rotate3d(0,0,0, 0) translate3d(0, 0, 0px);
+  }
+   100% {
+     transform: perspective(500px) rotate3d(0, 1, 0, 720deg) translate3d(0, 0, -150px);
+  }
+}
+*/
+ @-webkit-keyframes loading2 {
+   0% {
+    transform: translateY(15px);
+    opacity: .7;
+   }
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+  }
+  
+@keyframes loading2 {
+   0% {
+/*    bottom: 0px;*/
+     transform: translateY(15px);
+/*    transform: scale(1, 1);*/
+    opacity: .7;
+  }
+
+  100% {
+/*    bottom: 15px;*/
+      transform: translateY(0px);
+/*    transform: scale(1.15, 1.15);*/
+    opacity: 1;
+  }
+}
+  body.init{
+    overflow-y: hidden;
+    background-color: #D01A48;
+    background-color: @@color;
+  }
+  body.init>*{
+    display: none;
+  }
+  .logo_1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     animation: loading2 .95s infinite alternate;
+    -moz-animation: loading2 .95s infinite alternate;
+    -webkit-animation: loading2 .95s infinite alternate;
+/*    animation-direction:alternate-reverse;*/
+    animation-timing-function: ease-in-out;
+  }
+  #loading{
+/*
+    animation: loading 3s infinite alternate;
+    -moz-animation: loading 3s infinite alternate;
+    -webkit-animation: loading 3s infinite alternate;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+*/
+    z-index: 10001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 75px;
+    margin-left: -70px;
+    margin-top: -40px;
+    opacity: 1;
+    display: block;
+  }
+  #lightbox1{
+    opacity:1;
+
+    position: fixed;
+    top: 0; left: 0;right: 0;bottom: 0;
+    z-index: 10000;
+    background-color: #D01A48;
+    background-color: @@color;
+
+  /*
+    box-shadow: 0 0 0 50vmax #D01A48;
+    box-shadow: 0 0 0 50vmax @@color;
+  */
+    display: block;
+  }
+ ::selection {
+  background-color: #D01A48;
+  background-color: @@color;
+  color: #ffffff;
+  }
+  ::-moz-selection {
+    
+  background-color: #D01A48;
+  background-color: @@color;
+  color: #ffffff;
+  }
+  img::selection {
+  background: transparent;
+  }
+  img::-moz-selection {
+  background: transparent;
+  }
+
+</style>
+
+<div id="loading">
+  <div class="logo_1"></div>
+</div>
+<div id="lightbox1"></div>

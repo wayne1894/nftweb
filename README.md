@@ -13,3 +13,12 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [09 CSS 網頁切版術 - 基本屬性 - 1](https://docs.google.com/presentation/d/1jiSiuaQnt0T3ZgGBdknHOjL7gsjFJBmRrVQnCSf_c34/edit?usp=sharing)
 ### [10 CSS 網頁切版術 - 盒子模型](https://docs.google.com/presentation/d/1pUDqmyLa5rRCVXAWNHM0JzShzH2P3G3EXq6bu4N-z2I/edit?usp=sharing)
 ### [11 CSS 網頁切版術 - inline-block 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+
+- 7/18 
+### [12 CSS 網頁切版術 - flexbox 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [13 CSS 網頁切版術 - position 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [14 CSS 網頁切版術 - float 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [15 CSS 網頁切版術 - 偽元素與偽類](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [16 CSS 網頁切版術 - 基本屬性 2](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [17 CSS 網頁切版術 - table 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+<!--### [18 CSS 網頁切版術 - RWD 術式展開](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)-->
