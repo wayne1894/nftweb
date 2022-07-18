@@ -79,11 +79,18 @@ nav>ul>li>a>span:last-child{
   width: 20%;
   vertical-align: top;
 }
+.shop .item .left img{
+  width: 100%;
+}
 .shop .item .center{
   display: inline-block;
   width: 40%;
   vertical-align: top;
   margin-left: -4px;
+}
+.shop .item .center h1{
+  font-size: 22px;
+  margin: 0;
 }
 .shop .item .right{
   display: inline-block;
