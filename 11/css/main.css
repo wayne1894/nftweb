@@ -87,10 +87,16 @@ nav>ul>li>a>span:last-child{
   width: 40%;
   vertical-align: top;
   margin-left: -4px;
+  padding:0 20px;
 }
 .shop .item .center h1{
   font-size: 22px;
   margin: 0;
+}
+.shop .item .center p{
+  margin-top: 120px;
+  color: #898000;
+  margin-bottom: 0;
 }
 .shop .item .right{
   display: inline-block;
