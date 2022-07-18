@@ -14,7 +14,7 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [10 CSS 網頁切版術 - 盒子模型](https://docs.google.com/presentation/d/1pUDqmyLa5rRCVXAWNHM0JzShzH2P3G3EXq6bu4N-z2I/edit?usp=sharing)
 ### [11 CSS 網頁切版術 - inline-block 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
 #### 07/18
-### [12 CSS 網頁切版術 - flexbox 排版](https://docs.google.com/presentation/d/1GduIfOJjYjgBMvxN_jF9fMlIhqyWDm-0vXkQ5TSXvWU/edit?usp=sharing)
+### [12 CSS 網頁切版術 - flexbox 排版](https://docs.google.com/presentation/d/1F8FVTygulHEFEgsgtkd5CeXJXMGDpY0KvXYRvGXVd6Q/edit?usp=sharing)
 ### [13 CSS 網頁切版術 - position 排版]
 ### [14 CSS 網頁切版術 - float 排版]
 ### [15 CSS 網頁切版術 - 偽元素與偽類]
