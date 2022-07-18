@@ -104,6 +104,12 @@ nav>ul>li>a>span:last-child{
   vertical-align: top;
   margin-left: -4px;
 }
+.shop .item .right .item_title{
+  border-bottom: 1px solid #898000;
+  padding-bottom: 10px;
+}
+
+
 .shop .item a.item_buy{
   text-decoration: none;
   background-color: #898000;
