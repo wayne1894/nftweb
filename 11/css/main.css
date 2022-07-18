@@ -81,13 +81,15 @@ nav>ul>li>a>span:last-child{
 }
 .shop .item .center{
   display: inline-block;
-  width: 38%;
+  width: 40%;
   vertical-align: top;
+  margin-left: -4px;
 }
 .shop .item .right{
   display: inline-block;
-  width: 38%;
+  width: 40%;
   vertical-align: top;
+  margin-left: -4px;
 }
 .shop .item a.item_buy{
   text-decoration: none;
