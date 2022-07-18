@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('include/head.html',{
+    "css": "main_inner.css"
+  })
+  <link rel="stylesheet" type="text/css" href="css/about.css" />
+</head>
+<body class="init">
+  @@include('include/first.html')
+  @@include('include/nav.html')
+  <header class="header_inner">
+      @@include('include/header_inner.html',{
+      "bg": "images/bg2/42.png"
+   })
+  </header>
+  <div id="about2" class="main_inner">
+    <div class="left">
+       <div class="inner_menu_parent">
+         <ul class="inner_menu">
+            <li><a href="about.html">緣起</a></li>
+            <li><a class="focus" href="about2.html">營業項目</a></li>
+            <li><a href="about3.html">發展願景</a></li>
+         </ul>
+       </div>
+     </div>
+    <div class="about right">
+      <div class="white_area"></div>
+      <div class="about_menu">
+        <div class="a_menu_child focus"><a href="about.html">公司簡介</a></div>
+        <div class="a_menu_child"><a href="about4.html">集團大事紀</a></div>
+        <div class="a_menu_child"><a href="about5.html">品牌故事</a></div>
+      </div>
+      <div class="inner_menu_wrap container" >
+        <ul class="inner_menu_mobile">
+          <li class="c_d01a48">
+            <span>營業項目</span>
+            <ol class="inner_ol">
+               <li><a href="about.html">緣起</a></li>
+               <li><a class="focus" href="about2.html">營業項目</a></li>
+               <li><a href="about3.html">發展願景</a></li>
+            </ol>
+          </li>
+         </ul>
+      </div>
+      <div class="about_parent">
+        <div class="about_block1">
+           <h2 class="svg1">
+             <span><div class="wow fadeInRight">營業項目</div></span>
+           </h2>
+           <div class="container_inner">
+              @@include('include/two_columns.html', {
+                "color_class": "c_cc9650",
+                "background-image": "images/bg/bg-33.png",
+                "background-image2": "svg_obj1",
+                "animate" : "fadeIn",
+                "wow-duration" : "1s",
+                "wow-delay" : "0.5s",
+                "two_text": {
+                  "h3": "產品介紹",
+                  "p" : "鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。"
+                },
+                "link" : "product.html"
+              })
+              @@include('include/two_columns.html', {
+                "color_class": "c_73bf00",
+                "background-image": "images/bg/bg-34.png",
+                "background-image2": "svg_obj2",
+                "animate" : "fadeIn",
+                "wow-duration" : "1.3s",
+                "wow-delay" : "0.8s",
+                "two_text": {
+                  "h3": "音樂教育",
+                  "p" : "教材、指導法經歷50年以上的研究，世界通用，在全國教室皆可銜接課程，是最完整的幼兒智能發展課程。"
+                },
+                "link" : "music.html"
+              })
+
+            </div>
+        </div>
+        <div class="about_block3">
+         <div class="a_b_line wow ablineIn" data-wow-delay="0.3s"></div>
+          <div class="container_inner wow fadeIn" data-wow-delay="0.5s">
+             <p># 鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。</p>
+             <p> # 中、西樂器學習課程、專業教材銷售及學習諮詢服務。</p>
+          </div>
+          <div class="a_b_line wow ablineIn" data-wow-delay="0.3s" data-wow-offset="-50"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/footer.html',{
+    "color_class": "c_d01a48"
+  })
+  <script src="js/main_inner.js"></script>
+</body>
+</html>

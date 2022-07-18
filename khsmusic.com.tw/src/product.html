@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('include/head.html',{
+    "css": "main.css"
+  })
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+</head>
+<body class="init">
+  @@include('include/first.html',{
+    "color" : "#cc9650"
+  })
+ @@include('include/nav.html')
+  <header>
+    @@include('include/header_product.html')
+  </header>
+  <script>
+  function gotourl(){
+    window.location="product2.html"
+  }
+      function gotourl2(){
+    window.location="product4.html"
+  }
+  </script>
+  <div class="main" style="padding-bottom: 140px;">
+    <div class="container">
+    
+    <div class="product_wrap">
+       <div class="product_columns wow fadeIn" data-wow-delay=".4s" style="background-image: url(images/bg5/39.png)" onclick="gotourl()">
+         <div class="top_img1"></div>
+         <h2>樂器產品</h2>
+         <div class="wrap1">
+           <div class="wrap2">
+             <h3>樂器產品</h3>
+             <div class="two_more">
+                <a href="product2.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+           <div class="p_line"></div>
+           <p>自1930年至今，功學社專營教育用品與樂器品牌，已經深耕台灣市場80餘年，始終用呵護備至的父母心，滿足您在音樂學習路上的所有需求。是全球前三大管樂器、鼓樂器品牌公司，從製造到品牌行銷跨足全球60多國。</p>
+         </div>
+         <div class="top_img2"></div>
+       </div>
+       <div class="product_columns wow fadeIn" data-wow-delay=".7s"  style="background-image: url(images/bg5/40.png)" onclick="gotourl2()">
+         <div class="top_img1"></div>
+         <h2>中古琴</h2>
+         <div class="wrap1">
+           <div class="wrap2">
+             <h3>中古琴</h3>
+             <div class="two_more">
+                <a href="product4.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+           <div class="p_line"></div>
+           <p>自1930年至今，功學社專營教育用品與樂器品牌，已經深耕台灣市場80餘年，始終用呵護備至的父母心，滿足您在音樂學習路上的所有需求。是全球前三大管樂器、鼓樂器品牌公司，從製造到品牌行銷跨足全球60多國。</p>
+         </div>
+         <div class="top_img2"></div>
+       </div>
+    </div>
+    <script>
+      $(function(){
+        $(".product_columns").hover(function(){
+          $(this).find(".wrap1").show();
+
+          $(this).find("h3").addClass("fadeInDown2");
+          $(this).find(".p_line").addClass("fadeInDown2");
+          $(this).find("p").addClass("fadeInDown2");
+          $(this).find(".two_more").addClass("fadeInLeft2");
+          
+        },function(){
+          $(this).find(".wrap1").hide();
+   
+          $(this).find("h3").removeClass("fadeInDown2");
+          $(this).find(".p_line").removeClass("fadeInDown2");
+          $(this).find("p").removeClass("fadeInDown2");
+          $(this).find(".two_more").removeClass("fadeInLeft2");
+        })
+      })  
+      
+    </script>
+   
+    </div>
+
+    <div class="product_service">
+       <div class="service">
+        <h2 class="h2_index">
+          <div class="container">
+            <span class="wow fadeInRight">產品分類</span>
+          </div>
+        </h2>
+        <div class="service_wrap">
+          <div class="container product_list_wrap">
+             <a href="product2.html" class="product_list wow scale" data-wow-delay="0s" style="background-image: url(images/bg5/69.png)"><h3>管樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.15s" class="product_list wow scale" style="background-image: url(images/bg5/70.png)"><h3>弦樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.3s" class="product_list wow scale" style="background-image: url(images/bg5/71.png)"><h3>口琴/手風琴</h3></a>
+             <a href="product2.html" data-wow-delay="0.45s" class="product_list wow scale" style="background-image: url(images/bg5/72.png)"><h3>鍵盤樂器</h3></a>
+          </div>
+          <div class="container product_list_wrap">
+             <a href="product2.html" data-wow-delay="0.6s" class="product_list wow scale" data-wow-offset="-280" style="background-image: url(images/bg5/73.png)"><h3>熱門樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.75s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/74.png)"><h3>打擊樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.9s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/75.png)"><h3>零配件</h3></a>
+             <a href="product2.html" data-wow-delay="1.05s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/76.png)"><h3>其他</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product_view container">
+      <h2 class="h2 music"><span class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">中古琴介紹</span></h2>
+      <div class="view_wrap">
+         <ul class="view_ul wow fadeInRight" data-wow-delay=".2s">
+           <li><a href="product4.html">中古琴介紹</a></li>
+           <li><a href="product6.html">選琴訣竅</a></li>
+           <li><a href="product10.html">鍵盤維修</a></li>
+           <li><a href="service.html">聯絡我們</a></li>
+         </ul>
+         <div class="view_left">
+           <h3 class="wow fadeIn" data-wow-delay=".3s">功學社認證中古琴「五大保證」</h3>
+           <div class="view_line1 wow ablineIn" data-wow-delay=".5s"></div>
+             <p class="wow fadeInUp" data-wow-delay=".6s">功學社了解您對中古琴購買的擔憂，因此功學社認證中古琴承諾每一位擁琴者五大保證：<br>
+            # 保證三年保固<br>
+            # 保證原廠製造號碼<br>
+            # 保證原廠零件整修<br>
+            # 保證無蛀蟲泡水琴<br>
+            # 全國售後服務網(一家購買，全台服務)</p>
+          <div class="view_line2 wow ablineIn" data-wow-offset="-160" data-wow-delay=".5s"></div>
+         </div>
+         <div class="view_right">
+           <div class="view_img wow fadeIn" data-wow-delay=".8s" style="background-image: url(images/bg5/88.png)"></div>
+         </div>
+      </div>
+    </div>
+   
+   
+    <div data-start="top:7%"  data-1300="top:23%" data-1600="top:24.5%" data-1900="top:26.5%" data-2200="top:27%" class="m_bg">
+       <img src="images/bg7.png" alt="">
+       <div class="bg_w"><img src="images/bg8.png"></div>
+    </div>
+
+  </div>
+
+    @@include('include/footer.html',{
+      "color_class": "c_cc9650"
+    })
+
+</body>
+</html>

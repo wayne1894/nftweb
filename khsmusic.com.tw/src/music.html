@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('include/head.html',{
+    "css": "main.css"
+  })
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+</head>
+<body class="init">
+  @@include('include/first.html',{
+    "color" : "#73bf00"
+  })
+ @@include('include/nav.html')
+  <header>
+    @@include('include/header_music.html')
+  </header>
+  
+  <div class="main">
+    <div class="music_view container">
+      <h2 class="h2 music"><span class="wow fadeInRight" data-wow-delay=".2s">音樂教育</span></h2>
+      <div class="view_wrap">
+         <ul class="view_ul wow fadeInLeft" data-wow-delay=".5s">
+           <li><a href="music2.html">兒童課程</a></li>
+           <li><a href="music3.html">成人課程</a></li>
+           <li><a href="music4.html">嚴選師資</a></li>
+           <li><a href="store.html">教室查詢</a></li>
+           <li><a href="music5.html">課程諮詢</a></li>
+         </ul>
+         <div class="view_left">
+           <h3 class="wow fadeIn3" data-wow-delay=".4s">不遺餘力推廣音樂文化</h3>
+           <div class="view_line1 wow ablineIn" data-wow-delay=".4s" ></div>
+           <p class="wow fadeInUp" data-wow-delay=".6s">功學社身為全球音樂產業前五大集團，對音樂文化之推廣一向不遺餘力，故於企業總部大樓興建之初，特規劃一國際級音樂廳，供集團內外愛好音樂者使用，功學社音樂廳，不論是各項硬、軟體皆經過精心設計規劃，除了能滿足聽眾聽的享受外，更期待在功學社音樂廳中演出的音樂家們，同樣也能感受功學社的用心，一同享受功學社長年辛苦耕耘音樂教育的甜美果實。</p>
+           <div class="view_line1 wow ablineIn" data-wow-offset="-160" data-wow-delay=".4s" ></div>
+         </div>
+         <div class="view_right wow fadeIn" data-wow-delay=".6s">
+           <div class="view_img"></div>
+         </div>
+      </div>
+    </div>
+    <div class="music_service">
+      <h2 class="h2_index m_left">
+        <div class="container">
+          <span class="wow fadeInLeft">音樂教育</span>
+        </div>
+      </h2>
+      <div class="music_wrap">
+        <div class="container" style="margin-bottom: 50px;">
+           <div class="music_columns wow fadeInUp">
+              <h3>兒童課程</h3>
+              <div style="background-image: url(images/bg4/6.png);" class="m_img"></div>
+              <p>「配合每個成長階段，加強適當能力」基於這樣適齡 教育的概念，我們讓孩子自然而然的獲得『音感』。小朋友的成長速度會隨著年齡而不同，所以，當某一項能力明顯成長時。</p>
+              <div class="two_more c_73bf00">
+               <a href="music2.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+           <div class="music_columns wow fadeInUp"  data-wow-delay=".3s">
+              <h3>成人課程</h3>
+              <div style="background-image: url(images/bg4/7.png);" class="m_img"></div>
+              <p>「配合每個成長階段，加強適當能力」基於這樣適齡 教育的概念，我們讓孩子自然而然的獲得『音感』。小朋友的成長速度會隨著年齡而不同，所以，當某一項能力明顯成長時。</p>
+              <div class="two_more c_73bf00">
+               <a href="music3.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+        </div>
+        <div class="container wow fadeIn">
+           <div class="music_columns_three wow fadeIn">
+            <a href="music4.html">
+               <div class="music_three_img zoom">
+                 <div class="inner" style="background-image: url(images/bg4/3.png);"></div>
+               </div>
+            </a>
+             <div class="music_txt">
+               <span class="m_span">嚴選師資</span>
+               <div class="two_more">
+                 <a href="music4.html">了解更多<span class="arrow"></span></a>
+               </div>
+             </div>
+           </div>
+           <div class="music_columns_three wow fadeIn" data-wow-delay=".2s">
+            <a href="store.html">
+               <div class="music_three_img zoom">
+                 <div class="inner" style="background-image: url(images/bg4/4.png);"></div>
+               </div>
+            </a>
+             <div class="music_txt">
+               <span class="m_span">教室查詢</span>
+               <div class="two_more">
+                 <a href="store.html">了解更多<span class="arrow"></span></a>
+               </div>
+             </div>
+           </div>
+           <div class="music_columns_three wow fadeIn" data-wow-delay=".4s">
+            <a href="music4.html">
+               <div class="music_three_img zoom">
+                 <div class="inner" style="background-image: url(images/bg4/5.png);"></div>
+               </div>
+            </a>
+             <div class="music_txt">
+               <span class="m_span">課程諮詢</span>
+               <div class="two_more">
+                 <a href="music4.html">了解更多<span class="arrow"></span></a>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="container">
+        <h2 class="h2 music wow fadeIn" data-wow-duration="0.8s"><span class="wow fadeInRight">活動訊息</span></h2>
+        <div class="news_wrap">
+          @@include('include/three_columns.html', {
+            "color_class": "c_73bf00",
+            "background-image": "images/bg/bg-35.png",
+            "area_button": "音樂教育",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-delay" : "0.3s",
+            "wow-offset": "-50",
+            "three_time": "十一月 6, 2017",
+            "three_text": {
+              "h3": "10組頂尖世界音樂演出．100頂市集帳篷 音樂 × 草地野餐 × 手作創意 × 異國料理"
+            }
+          })
+          @@include('include/three_columns.html', {
+            "color_class": "c_73bf00",
+            "background-image": "images/bg/bg-36.png",
+            "area_button": "音樂教育",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-offset": "-50",
+            "wow-delay" : "0.6s",
+            "three_time": "八月 24, 2017",
+            "three_text": {
+              "h3": "2017暑期招生活動正式開跑~獨家贈品限量發送"
+            }
+          })
+          @@include('include/three_columns.html', {
+            "color_class": "c_73bf00",
+            "background-image": "images/bg/bg-37.png",
+            "area_button": "音樂教育",
+            "animate" : "fadeIn",
+            "wow-duration" : "1.2s",
+            "wow-offset": "-50",
+            "wow-delay" : "0.9s",
+            "three_time": "八月 19, 2017",
+            "three_text": {
+              "h3": "功學社會員購票享9折優惠-日本音樂的繪本─動物樂團嘉年華"
+            }
+          })
+        </div>
+      </div>
+    </div>
+    
+
+    <div data-start="top:-5.5%" data-600="top:-1%" data-1000="top:1%" data-1500="top:10%" data-2000="top:30%" data-2500="top:39%"  class="m_bg">
+       <img src="images/bg7.png" alt="">
+       <div class="bg_w"><img src="images/bg8.png" alt=""></div>
+    </div>
+
+  </div>
+  <div class="arrowClass two_more not-move c_73bf00">
+     <a href="music5.html">課程諮詢<span class="arrow"></span></a>
+  </div>
+  <div id="all_news" class="all_news c_73bf00">
+    <a href="news.html">全部新聞<span class="arrow"></span></a>
+  </div>
+    @@include('include/footer.html',{
+      "color_class": "c_73bf00"
+    })
+</body>
+</html>

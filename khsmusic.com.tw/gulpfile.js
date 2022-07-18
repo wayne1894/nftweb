@@ -1,140 +1,111 @@
-var gulp = require('gulp')
+var gulp = require('gulp');
 var gulpPlumber = require('gulp-plumber');// 錯誤處理
 var merge= require('merge-stream');// merge-stream
 var _del = require('del');
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
-//gulp-webserver
-var webserver = require('gulp-webserver');
-gulp.task('webserver', function() {
-  gulp.src('./public')
-    .pipe(webserver({
-      port:1919,
-      livereload: true,
-      directoryListing: false,
-      open: "index.html"
-    }));
-});
+var fileinclude = require('gulp-file-include'); //html檔案include
 
+var sass = require('gulp-sass'); //編譯scss
+
+//最小化檔案
+var imagemin = require('gulp-imagemin'); //壓縮img 
+var htmlmin = require('gulp-htmlmin'); // 壓縮html
+var cssmin = require('gulp-minify-css'); // 壓縮css
+var gulpUglify = require('gulp-uglify'); // 壓縮js
+
+var hash_src = require("gulp-hash-src"); // 檔案後加hash
+
+
+//browserSync
+gulp.task('server', function () {
+	browserSync.init({
+		files : ['dist/*.html', 'dist/css/*.css', 'dist/js/*.js'],
+		server : {
+			baseDir : "./dist"
+		}
+	});
+})
 
 //gulp-file-include
-var fileinclude = require('gulp-file-include')
 gulp.task('fileinclude', function() {
-  gulp.src(['develop/*.html'])
+  gulp.src(['src/*.html'])
 	.pipe(gulpPlumber())
 	.pipe(fileinclude({
 		prefix: '@@',
 		basepath: '@file'
 	}))
-	.pipe(gulp.dest('./public'));
+	.pipe(gulp.dest('./dist'));
 });
-
-//gulp-js-import
-var jsImport = require('gulp-js-import');
-gulp.task('jsImport', function() {
-  return gulp.src(['develop/js/*.js'])
-        .pipe(jsImport({hideConsole: true}))
-        .pipe(gulpPlumber())
-        .pipe(gulp.dest('./public/src/build/js'));
-});
-
-// gulp-concatnpm 
-//var concat= require('gulp-concat');
-//
-//gulp.task('concat', function() { //合併檔案
-//	var concat1=gulp.src(['develop/js/*.js'])
-//		.pipe(gulpPlumber())
-//		.pipe(concat('main.js'))
-//		.pipe(gulp.dest('./public/src/build/js'));
-////	var concat2= gulp.src(['develop/js/firebase_init.js'])
-////		.pipe(gulpPlumber())
-////		.pipe(gulp.dest('./public/src/build/js'));
-////	return merge(concat1, concat2);
-////  return merge(concat1);
-//});
-
 
 //gulp-sass
-var sass = require('gulp-sass');
-//gulp.task('concat_css', function () {
-//    var scssStream = gulp.src(['develop/css/normalize.scss','develop/css/*.scss'])
-//        .pipe(gulpPlumber())
-//        .pipe(sass())
-//        .pipe(concat('main.css'))
-//        .pipe(gulp.dest('./public/src/build/css'));
-//});
-
 gulp.task('scss', function () {
-    var scssStream = gulp.src(['develop/css/*.scss'])
+    var scssStream = gulp.src(['src/css/*.scss'])
         .pipe(gulpPlumber())
         .pipe(sass())
-        .pipe(gulp.dest('./public/src/build/css'));
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('./dist/css'));
 });
 
-var imagemin = require('gulp-imagemin');
+//gulp-imagemin
 gulp.task('imagemin',function(){
-    gulp.src(['public/src/static/images/**'])
+    gulp.src(['dist/images/**'])
 		.pipe(imagemin())
-		.pipe(gulp.dest('./public/src/static/images'));
-});
-var imagemin2 = require('gulp-imagemin');
-gulp.task('imagemin2',function(){
-    gulp.src(['develop/img/**'])
-		.pipe(imagemin())
-		.pipe(gulp.dest('./develop/img'));
+		.pipe(gulp.dest('./dist/images'));
 });
 
-var staticHash = require('gulp-static-hash');//gulp-static-hash (亂數 hash)
-var htmlmin = require('gulp-htmlmin'); // gulp-htmlmin (最小化檔案)
-var cssmin = require('gulp-minify-css'); //(最小化檔案)
-var gulpUglify = require('gulp-uglify'); // gulp-uglify (最小化檔案)
 gulp.task('html', function () {
-    gulp.src('public/*.html')
-		.pipe(staticHash({asset: 'static'}))
-	  .pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest('./public'));
+    gulp.src('dist/*.html')
+//	  .pipe(htmlmin({collapseWhitespace: true})) 會把空白字串濾掉
+      .pipe(hash_src({
+          build_dir: "./dist",
+          src_path: "./dist",
+          query_name: "",
+          hash_len: 8
+        }))
+	  .pipe(gulp.dest('./dist'));
 });
 gulp.task('cssmin', function () {
-    gulp.src('public/src/build/css/*.css')
-		.pipe(cssmin())
-		.pipe(gulp.dest('./public/src/build/css'));
+    gulp.src('dist/css/*.css')
+	  .pipe(cssmin())
+	  .pipe(gulp.dest('./dist/css'));
 });
 gulp.task('gulpUglify', function () {
-    gulp.src('public/src/build/js/*.js')
+    gulp.src('dist/js/*.js')
 		.pipe(gulpUglify())
-		.pipe(gulp.dest('./public/src/build/js'));
+		.pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('copy', function() { //複製靜態檔案
-	var copy1=gulp.src(['develop/img/**'])
-	  .pipe(gulp.dest('./public/src/static/images'));
-	var copy2=gulp.src(['./favicon.ico'])
-		.pipe(gulp.dest('./public/'));
-  var copy3=gulp.src(['develop/js/static/**'])
-	  .pipe(gulp.dest('./public/src/static/js'));
+//複製靜態檔案
+gulp.task('copy', function() { 
+	gulp.src(['src/images/**'])
+	  .pipe(gulp.dest('./dist/images'));
+	gulp.src(['src/favicon.ico'])
+	  .pipe(gulp.dest('./dist'));
+    gulp.src(['src/js/**'])
+	  .pipe(gulp.dest('./dist/js'));
 });
-
-
-//即時監控
-//develop watch下的檔案 新增資料夾重新命名會出錯 
-gulp.task('watch', function () {
-	gulp.watch(['develop/*.html'], ['fileinclude']);
-	gulp.watch(['develop/include/*.html'], ['fileinclude']);
-	gulp.watch(['develop/css/*.scss','develop/css/*/*.scss'], ['scss']);
-	gulp.watch(['develop/js/*.js','develop/js/partials/**'], ['jsImport']);
-	gulp.watch(['develop/img/**','develop/js/static'], ['copy']);
-})
-
 
 //清除public資料夾檔案
 gulp.task('clear', function(){ 
-  return _del('./public', {force:true});
+  return _del('./dist', {force:true});
 });
 
-//預設執行 
-gulp.task('default', ['watch','fileinclude','scss','webserver','jsImport','copy']);
+//即時監控
+//develop watch下的檔案 
+gulp.task('watch', function () {
+	gulp.watch(['src/*.html'], ['fileinclude']);
+	gulp.watch(['src/include/*.html'], ['fileinclude']);
+	gulp.watch(['src/css/*.scss','src/css/*/*.scss'], ['scss']);
+	gulp.watch(['src/js/*.js','src/js/partials/**']);
+	gulp.watch(['src/images/**','src/js/static'], ['copy']);
+})
 
-//初始化建專案
-gulp.task('build', ['fileinclude','scss','jsImport','copy']);
-gulp.task('img', ['imagemin2']);
-//deploy 前執行的最小化檔案
-gulp.task('deploy', ['cssmin','gulpUglify']);
+//預設執行 
+gulp.task('default', ['watch','fileinclude','scss','server','copy']);
+
+//build 最小化檔案
+gulp.task('build', ['fileinclude','scss','copy','imagemin']);
+//最小化檔案
+gulp.task('deploy', ['html','cssmin','gulpUglify','imagemin']);
