@@ -108,7 +108,25 @@ nav>ul>li>a>span:last-child{
   border-bottom: 1px solid #898000;
   padding-bottom: 10px;
 }
-
+.shop .item .right .item_left{
+  display: inline-block;
+  width: 70%;
+}
+.shop .item .right .item_left h2{
+  font-size: 18px;
+  color: #898000;
+}
+.shop .item .right .item_left p{
+  font-size: 14px;
+}
+.shop .item .right .item_right{
+  display: inline-block;
+  width: 30%;
+  margin-left: -4px;
+  vertical-align: top;
+  text-align: right;
+  margin-top: 20px;
+}
 
 .shop .item a.item_buy{
   text-decoration: none;
