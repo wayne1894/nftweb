@@ -20,9 +20,11 @@ body{
 }
 
 .main{
-  width: 980px;
+  /* width: 980px; */
   margin: 0 auto;
   padding-top: 30px;
+  width: 100%;
+  max-width: 1200px;
 }
 header{
   text-align: center;
@@ -137,4 +139,9 @@ nav>ul>li>a>span:last-child{
 }
 .shop .item a.item_buy:hover{
   background-color: #000
+}
+
+
+@media (max-width:992px){
+
 }
