@@ -43,10 +43,10 @@ nav ul{
   margin: 0;
   padding: 0;
   height: 80px;
-  line-height: 80px;
+  /* line-height: 80px; */
   font-size: 28px;
   display: flex;
-
+  flex-direction: row;
 }
 nav>ul>li{
   /* display: inline-block; */
@@ -57,8 +57,10 @@ nav>ul>li{
 }
 nav>ul>li>a{
   text-decoration: none;
-  display: block;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
 }
 nav>ul>li>a:hover{
   background-color: #dcdddd;
@@ -148,6 +150,10 @@ nav>ul>li>a>span:last-child{
 
 
 @media (max-width:992px){
+  nav ul{
+    flex-direction: column;
+    height: auto;
+  }
   .shop .item{
     border: none;
   }
