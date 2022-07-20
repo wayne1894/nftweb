@@ -1,0 +1,205 @@
+$color1 : red;
+$color2 : green;
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'AbelRegular';
+    src: url('/fonts/abel-regular-webfont.eot');
+    src: url('/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/abel-regular-webfont.woff') format('woff'),  url('/fonts/abel-regular-webfont.ttf') format('truetype'),  url('/fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+}
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+}
+
+.main{
+  /* width: 980px; */
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+header img{
+  width: 200px;
+}
+nav{
+  margin-bottom: 30px;
+  border-top: 1px solid $color1;
+  border-bottom: 1px solid $color1;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    /* line-height: 80px; */
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+  }
+  >ul>li{
+    /* display: inline-block; */
+    /* width: calc( 100%/7 ); */
+    flex: 1;
+    text-align: center;
+    >a,.nav_menu{
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100%;
+      &:hover{
+        background-color: #dcdddd;
+      }
+      &>span:first-child{
+        font-weight: bold;
+        color: #000;
+      }
+      &>span:last-child{
+        color: $color1;
+      }
+    }
+  }
+  .nav_menu{
+     position: relative;
+    .menu_item {
+      position: absolute;
+      width:100%;
+    }
+    a{
+      display: block;
+      height: 80px;
+      width: 100%;
+      line-height: 80px;
+      background: $color1;
+      text-decoration: none;
+      color: #fff;
+      &:hover{
+        background-color: #000;
+      }
+    }
+  }
+
+
+}
+
+.index img{
+  width: 100%;
+}
+
+.shop{
+  .item{
+    border: 1px solid $color1;
+    border-bottom: none;
+    padding: 15px;
+    display: flex;
+    &:last-child{
+      border-bottom: 1px solid $color1;
+    }
+    .left{
+      /* display: inline-block; */
+      flex-basis: 250px;
+      /* vertical-align: top; */
+    }
+    .left img{
+      width: 100%;
+    }
+    .center{
+      /* display: inline-block; */
+      /* flex-basis: 40%; */
+      /* vertical-align: top; */
+      /* margin-left: -4px; */
+      flex:1;
+      padding:0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .center h1{
+      font-size: 22px;
+      margin: 0;
+    }
+    .center p{
+      margin-top: 120px;
+      color: $color1;
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+    .right{
+      /* display: inline-block; */
+      flex-basis: 300px;
+      /* vertical-align: top;
+      margin-left: -4px; */
+    }
+    .right .item_title{
+      border-bottom: 1px solid $color1;
+      padding-bottom: 10px;
+    }
+    .right .item_left{
+      display: inline-block;
+      width: 70%;
+    }
+    .right .item_left h2{
+      font-size: 18px;
+      color: $color1;
+    }
+    .right .item_left p{
+      font-size: 14px;
+    }
+    .right .item_right{
+      display: inline-block;
+      width: 30%;
+      margin-left: -4px;
+      vertical-align: top;
+      text-align: right;
+      margin-top: 20px;
+    }
+    a.item_buy{
+      text-decoration: none;
+      background-color: $color1;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 16px;
+    }
+    a.item_buy:hover{
+      background-color: #000
+    }
+  }
+}
+
+/* @media (max-width:992px){
+  nav ul{
+    flex-direction: column;
+    height: auto;
+  }
+  .shop .item{
+    border: none;
+    flex-direction: column;
+  }
+  .shop .item .left {
+    width: 100%;
+  }
+  .shop .item .center{
+    width: 100%;
+    padding: 0;
+    margin-left:0;
+  }
+  .shop .item .center p{
+    margin-top: 20px;
+  }
+  .shop .item .right{
+    width: 100%;
+  }
+} */
