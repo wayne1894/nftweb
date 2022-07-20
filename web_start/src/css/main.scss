@@ -68,7 +68,7 @@ nav{
         font-weight: bold;
         color: #000;
       }
-      &>span:last-child{
+      &>span:nth-child(2){
         color: $color1;
       }
     }
@@ -78,6 +78,11 @@ nav{
     .menu_item {
       position: absolute;
       width:100%;
+      top:100%;
+      display:none;
+    }
+    &:hover .menu_item{
+      display: block
     }
     a{
       display: block;
