@@ -273,7 +273,11 @@ nav{
 #carouselExampleIndicators{
   button {
     width: 80px;
+    &.active img{
+      border: 2px solid red;
+    }
   }
+  
 }
 .carousel-indicators{
   justify-content: left;
