@@ -3,32 +3,16 @@ $color2 : green;
 
 $content_width : 900px;
 
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
+//bootstrap 變數編譯
+$primary:  blue;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
     font-family: 'AbelRegular';
     src: url('/fonts/abel-regular-webfont.eot');
     src: url('/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/abel-regular-webfont.woff') format('woff'),  url('/fonts/abel-regular-webfont.ttf') format('truetype'),  url('/fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
 }
-
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
 
 body{
   font-family: 'Noto Sans TC', sans-serif;
@@ -196,6 +180,88 @@ nav{
     }
   }
 }
+
+
+
+.product_content{
+  margin-bottom: 30px;
+  font-size: 16px;
+  width: 100%;
+  padding-top: 10px;
+  position: relative
+}
+.product_content .left{
+  width: 523px;
+  position: absolute;
+}
+.product_content .left .img_show{
+  background-color: #8A8000;
+  height: 380px;
+  margin-bottom: 12px;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+/*
+  -webkit-transition: background-image 0.2s;
+  transition: background-image 0.2s;
+*/
+}
+.product_content .left .img_list>div{
+  background-color: #8A8000;
+  width: 80px;
+  height: 60px;
+  margin-right: 4px;
+  display: inline-block;
+  background-size : 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.product_content .left .img_list .active{
+  outline: 4px solid #8a8000;
+}
+.product_content .right{
+  margin-left: 548px;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+.product_content .right .g1{
+  font-size: 24px;
+  line-height: 34px;
+}
+.product_content .right .g2{
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 2px solid #8A8000;
+  margin-bottom: 18px;
+  display: inline-block;
+  
+}
+.product_content .right .g3{
+  font-weight: 400;
+}
+.product_content .right .g33{
+  font-weight: 400;
+  margin-top: 25px;
+}
+.product_content .right .g4{
+  width: 120px;
+  height: 45px;
+  background-color: #8A8000;
+  border-radius: 13px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 45px;
+  font-size: 22px;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block
+}
+.product_content .right .g4:hover{
+   background-color: black;
+}
+
+
 
 footer{
   background-color: $color1;

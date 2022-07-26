@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+ @@include('include/head.html')
+</head>
+
+<body>
+    <div class="main">
+      <header>
+        <img src="img/logo.png" alt="此木創遊">
+      </header>
+      @@include('include/nav.html')
+      <div class="product_content" style="margin-bottom: 50px;">
+        <div class="left">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/C0.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/C1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/C2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="right">
+          <div class="g1">萬貓的慶典</div>
+          <div class="g2">Festival of Thousand Cats</div>
+          <div class="g3">
+            遊戲設計：福夕郎 <br>
+            美術插畫：ナカヤマ皐月 <br>
+            遊戲人數：3-4人 <br>
+            遊戲時間：20-40分鐘 <br>
+            建議售價：820元 <br>
+          </div>
+          <div class="g33">
+            Designer：Fukutarou <br>
+            Artist：Satsuki Nakayama <br>
+            Players：3-4人 <br>
+            Playing Time：20-40分鐘 <br>
+            MSRP：NT$820 <br>
+          </div>
+          <a class="g4" href="shop.html">立即購買</a>
+        </div>
+      </div>
+	</div>
+	@@include('include/footer.html')
+</body>
+
+</html>
