@@ -1,7 +1,7 @@
 $color1 : red;
 $color2 : green;
 
-$content_width : 900px;
+$content_width : 1280px;
 
 //bootstrap 變數編譯
 $primary:  blue;
@@ -77,6 +77,7 @@ nav{
       width:100%;
       top:100%;
       display:none;
+      z-index: 100;
     }
     &:hover .menu_item{
       display: block
@@ -191,8 +192,7 @@ nav{
   position: relative
 }
 .product_content .left{
-  width: 523px;
-  position: absolute;
+  margin-right: 320px;
 }
 .product_content .left .img_show{
   background-color: #8A8000;
@@ -219,7 +219,10 @@ nav{
   outline: 4px solid #8a8000;
 }
 .product_content .right{
-  margin-left: 548px;
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
   font-size: 16px;
   line-height: 20px;
 
@@ -260,6 +263,13 @@ nav{
 .product_content .right .g4:hover{
    background-color: black;
 }
+.product_content .carousel-item{
+  img{
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
 
 
 
