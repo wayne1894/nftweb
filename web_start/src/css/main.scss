@@ -17,6 +17,17 @@ html {
     src: url('/fonts/abel-regular-webfont.eot');
     src: url('/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('/fonts/abel-regular-webfont.woff') format('woff'),  url('/fonts/abel-regular-webfont.ttf') format('truetype'),  url('/fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
 }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
 body{
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
@@ -181,6 +192,33 @@ nav{
     a.item_buy:hover{
       background-color: #000
     }
+  }
+}
+
+footer{
+  background-color: $color1;
+  height: 135px;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap{
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  ul.footer_left{
+    width: 50%;
+    float: left;
+    li{
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+  .footer_right{
+    width: 50%;
+    float: right;
+    text-align: right;
   }
 }
 
