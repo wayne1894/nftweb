@@ -16,8 +16,8 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 #### 07/18
 ### [12 CSS 網頁切版術 - flexbox 排版](https://docs.google.com/presentation/d/1F8FVTygulHEFEgsgtkd5CeXJXMGDpY0KvXYRvGXVd6Q/edit?usp=sharing)
 ### [13 CSS 網頁切版術 - position 排版](https://docs.google.com/presentation/d/1D87X_Cbypq4tddxPmfyZid0888R1yvf75FJRseOBvdM/edit?usp=sharing)
-### [14 CSS 網頁切版術 - float 排版]
-### [15 CSS 網頁切版術 - 偽元素與偽類]
-### [16 CSS 網頁切版術 - 基本屬性 2]
-### [17 CSS 網頁切版術 - table 排版]
+### [14 CSS 網頁切版術 - float 與 table 排版](https://docs.google.com/presentation/d/1-wgaFD_hC2vkF827nUE87li9JhNQXD30Jh10uzfAtQU/edit?usp=sharing)
+### [15 CSS 網頁切版術 - 基本屬性與常用技巧](https://docs.google.com/presentation/d/1_OSA6iNJwC8duWQbNs7Xd3T34WWbP1n6bCm_yMABo9w/edit?usp=sharing)
+
+
 <!--### [18 CSS 網頁切版術 - RWD 術式展開]
