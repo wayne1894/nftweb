@@ -19,5 +19,7 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [14 CSS 網頁切版術 - float 與 table 排版](https://docs.google.com/presentation/d/1-wgaFD_hC2vkF827nUE87li9JhNQXD30Jh10uzfAtQU/edit?usp=sharing)
 ### [15 CSS 網頁切版術 - 基本屬性與常用技巧](https://docs.google.com/presentation/d/1_OSA6iNJwC8duWQbNs7Xd3T34WWbP1n6bCm_yMABo9w/edit?usp=sharing)
 
-
-<!--### [18 CSS 網頁切版術 - RWD 術式展開]
+#### 08/01
+### [16、Javascript 勇者鬥惡龍 - 計算機概論](https://docs.google.com/presentation/d/1K69yUkkdjO2yXH8Xfpt4bMm8v_RDLjw9EX66CxfhXXA/edit?usp=sharing)
+### [17、Javascript 勇者鬥惡龍 - 基本語法](https://docs.google.com/presentation/d/151S08lRaSEUe9g-_Lo8IXvxug0OjOSGFrfnjju52Ng0/edit?usp=sharing)
+### [18、Javascript 勇者鬥惡龍 - 生成藝術 ](https://docs.google.com/presentation/d/17IShbzGffjA_4NcWhQo7p5FZ5D57OA1WZxh6-qTQNho/edit?usp=sharing)
