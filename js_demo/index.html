@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle/dist/helpers/simple.js"></script>
+
+<style>
+
+
+</style>
+</head>
+<body>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
+    <canvas id="real-turtle"></canvas>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+
+
+    <script>
+        
+        turtle.setSpeed(0.9);
+
+        turtle.penUp();
+
+        let i=0;
+
+        while (i<600){
+            turtle.penDown();
+            turtle.fd(i-1);
+            turtle.left(34);
+           // turtle.penUp();
+            turtle.fd(i*2);
+            turtle.left(57);
+            i = i + 1;
+        }
+
+
+
+
+        // demo1
+        // while (i<600){
+        //     turtle.penDown();
+        //     turtle.fd(i-1);
+        //     turtle.left(34);
+        //     turtle.fd(i-2);
+        //     turtle.left(57);
+        //     i = i + 1;
+        // }
+
+    </script>
+</body>
+</html>
