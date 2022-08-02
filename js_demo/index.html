@@ -20,21 +20,35 @@
 
     <script>
         
-        turtle.setSpeed(0.9);
+turtle.setSpeed(0.9);
 
-        turtle.penUp();
 
-        let i=0;
+let length = 0;
+let angle = 90;
+let step = 5
 
-        while (i<600){
-            turtle.penDown();
-            turtle.fd(i-1);
-            turtle.left(34);
-           // turtle.penUp();
-            turtle.fd(i*2);
-            turtle.left(57);
-            i = i + 1;
-        }
+for(var i=0;i<500;i++){
+    turtle.fd(length)
+    turtle.left(angle)
+    length = length + step
+}
+
+
+
+
+        // turtle.penUp();
+
+        // let i=0;
+
+        // while (i<600){
+        //     turtle.penDown();
+        //     turtle.fd(i-1);
+        //     turtle.left(34);
+        //     turtle.penUp();
+        //     turtle.fd(i*2);
+        //     turtle.left(57);
+        //     i = i + 1;
+        // }
 
 
 
