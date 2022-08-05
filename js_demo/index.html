@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/javascript" src="https://unpkg.com/real-turtle/dist/helpers/simple.js"></script>
 
-<style>
+    <style>
 
 
-</style>
+    </style>
 </head>
+
 <body>
     <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
     <canvas id="real-turtle"></canvas>
-    <script type="text/javascript" src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
-
+    <script>
+        (() => { let e = window.RealTurtle.default; var t = document.getElementById("real-turtle"); null == t && ((t = document.createElement("canvas")).id = "real-turtle", document.body.append(t), console.warn("Turtle helper could not find an existing canvas element. Created a custom one", t)), null != t.getAttribute("width") && null != t.getAttribute("height") || (t.width = window.innerWidth, t.height = window.innerHeight), window.turtle = new e(t, { verbose: !1,async:true, autoStart: false, state: { speed: .5 } }); var n = document.createElement("style"); n.type = "text/css", n.innerHTML = "\n  html, body{\n    margin: 0;\n    padding: 0;\n  }\n\n  #real-turtle, #real-turtle canvas{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n", document.body.append(n) })();
+    </script>
 
     <script>
-        
-turtle.setSpeed(0.9);
+
+        turtle.setSpeed(0.2);
+
+        // var radius = 15;
+        // var fd = 10
+
+        // turtle.setPosition(500, 500);
+         turtle.beginPath()
+        // turtle.setStrokeColorRGB(255, 0, 0)
+        // turtle.fd(100)
+
+        // turtle.setPosition(300, 200);
+        // turtle.fd(0)
+        // turtle.stroke()
 
 
-let length = 0;
-let angle = 90;
-let step = 5
-
-for(var i=0;i<500;i++){
-    turtle.fd(length)
-    turtle.left(angle)
-    length = length + step
-}
+        // turtle.setPosition(120, 150);
+        // turtle.fd(0)
+        // turtle.stroke()
 
 
+        // turtle.setPosition(340, 343);
+        // turtle.fd(0)
+        // turtle.stroke()
+        let state = true
+
+        document.addEventListener("mousedown", async function () {
+            if(!state) return 
+            state = false
+            let mousex = event.clientX; // Gets Mouse X
+            let mousey = event.clientY; // Gets Mouse Y
+           // console.log([mousex, mousey]); // Prints data
+
+
+            await turtle.setPosition(mousex, mousey);
+            await turtle.fd(0)
+            await turtle.stroke()
+            state = true
+        });
+
+// turtle
+//     .arc(25,360,true) // 畫一個半徑為15的圓
+//     .right(90)  //向右轉180度
+//     .penUp()  //把筆拿開
+//     .fd(10) //前進
+//     .penDown()  //把筆拿開
+//     .left(90) //向左轉90度(轉正)
+//     .setLineWidth(3)
+// turtle
+//     .arc(35,360,true) // 畫一個半徑為15的圓
+//     .right(90)  //向右轉180度
+//     .penUp()  //把筆拿開
+//     .fd(10) //前進
+//     .penDown()  //把筆拿開
+//     .left(90) //向左轉90度(轉正)
+//     .setLineWidth(4)
+
+// turtle
+//     .arc(45,360,true) // 畫一個半徑為15的圓
 
 
         // turtle.penUp();
@@ -53,16 +99,18 @@ for(var i=0;i<500;i++){
 
 
 
-        // demo1
-        // while (i<600){
-        //     turtle.penDown();
-        //     turtle.fd(i-1);
-        //     turtle.left(34);
-        //     turtle.fd(i-2);
-        //     turtle.left(57);
-        //     i = i + 1;
-        // }
+// demo1
+// var i
+//         while (i<600){
+//             turtle.penDown();
+//             turtle.fd(i-1);
+//             turtle.left(34);
+//             turtle.fd(i-2);
+//             turtle.left(57);
+//             i = i + 1;
+//         }
 
     </script>
 </body>
+
 </html>
