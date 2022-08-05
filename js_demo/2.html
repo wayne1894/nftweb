@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
+    <canvas id="real-turtle"></canvas>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+
+
+    <script>
+
+        turtle.setSpeed(0.99);
+
+        let window_width = window.innerWidth;
+        let window_height = window.innerHeight;
+        var start_width = 200;
+        var start_height = 20;
+        var square_width = 700;
+        var square_height = 700;
+        var reduce = 20
+        turtle.setPosition(start_width, start_height);
+
+        for(var i=0;i<20;i++){
+            square();
+            turtle
+            .back(3)
+            .right(91)
+            .penUp()
+            .fd(15)
+            .penDown()
+            .left(90)
+            square_width = square_width - (18)
+            square_height = square_height - (18)
+        }
+
+    turtle.penUp()
+    .right(90)
+    turtle.fd(square_width)
+    .left(90)
+    .penDown()
+ 
+
+    for(var i=0;i<16;i++){
+            square2();
+            turtle
+            .back(3)
+            .left(91)
+            .penUp()
+            .fd(15)
+            .penDown()
+            .right(90)
+            square_width = square_width - (18)
+            square_height = square_height - (16)
+        }
+
+
+    // turtle.penUp()
+    // .left(90)
+    // turtle.fd(square_width)
+    // .right(90)
+    // .penDown()   
+ 
+    
+    // for(var i=0;i<15;i++){
+    //         square();
+    //         turtle
+    //         .back(3)
+    //         .right(91)
+    //         .penUp()
+    //         .fd(15)
+    //         .penDown()
+    //         .left(90)
+    //         square_width = square_width - (18)
+    //         square_height = square_height - (18)
+    //     }
+
+ 
+        
+
+ turtle.setSize(0)
+ 
+
+        function square(){
+            turtle
+            .right(90)
+            .fd(square_width)
+            .right(90)
+            .fd(square_height)
+            .right(90)
+            .fd(square_width)
+            .right(90)
+            .fd(square_height)
+        }
+        function square2(){
+            turtle
+            .left(90)
+            .fd(square_width)
+            .left(90)
+            .fd(square_height)
+            .left(90)
+            .fd(square_width)
+            .left(90)
+            .fd(square_height)
+        }
+
+    </script>
+</body>
+
+</html>
