@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-
-
-    </style>
 </head>
 
 <body>
@@ -23,12 +18,17 @@
     <script>
 
         turtle.setSpeed(0.2);
-
+        
+        //網頁一載入
+        window.onload = function() {
+            turtle.beginPath()
+        }
+        
         // var radius = 15;
         // var fd = 10
 
         // turtle.setPosition(500, 500);
-         turtle.beginPath()
+      //   turtle.beginPath()
         // turtle.setStrokeColorRGB(255, 0, 0)
         // turtle.fd(100)
 
@@ -46,19 +46,21 @@
         // turtle.fd(0)
         // turtle.stroke()
         let state = true
-
+ 
         document.addEventListener("mousedown", async function () {
             if(!state) return 
             state = false
+        
             let mousex = event.clientX; // Gets Mouse X
             let mousey = event.clientY; // Gets Mouse Y
-           // console.log([mousex, mousey]); // Prints data
+            console.log([mousex, mousey]); // Prints data
 
-
+          
             await turtle.setPosition(mousex, mousey);
+            //await turtle.arc(45,360,true)
             await turtle.fd(0)
-            await turtle.stroke()
-            state = true
+            //await turtle.stroke()
+           state = true
         });
 
 // turtle
