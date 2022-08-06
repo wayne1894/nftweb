@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle"></script>
+    <canvas id="real-turtle"></canvas>
+    <script type="text/javascript" src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+
+
+    <script>
+    let window_width = window.innerWidth;
+    let window_height = window.innerHeight;
+    var radius = 220;
+    turtle.setLineWidth(3);
+    turtle.setSpeed(0.99);
+
+  
+    flower_of_life(radius,parseInt(window_width/6));
+    flower_of_life(radius,parseInt(window_width/6 * 3));
+    flower_of_life(radius,parseInt(window_width/6 * 5));
+
+    function flower_of_life(radius,center_left){
+        //turtle.setStrokeColorRGB(255, 215, 0);
+        turtle.setPosition(center_left + radius, parseInt(window_height/2));
+        turtle.setStrokeColorRGB(randomInteger(255), randomInteger(255), randomInteger(255));
+        turtle.arc(radius,360,true);
+        go_center(center_left);
+        side_round(radius);
+        for( var i=1;i<=6;i++){
+            turtle
+                .left(30)
+                .penUp()
+                .fd(radius/3)
+            side_round(radius)   
+            go_center(center_left);
+        }
+        turtle.setStrokeColorRGB(randomInteger(255), randomInteger(255), randomInteger(255));
+
+        for(var i=1;i<=6;i++){
+            turtle.left(30)
+            turtle
+                .penUp()
+                .fd(radius/3 * 2)
+                .right(30)
+                .penDown()
+                .arc(radius/3,360/6,true)
+                .left(180)
+                .arc(radius/3,360/6,true)
+                .left(-180)
+                .arc(radius/3,360/6,true)
+                .right(-30)
+                .left(180)
+                .right(-30)
+                .arc(radius/3,360/6,true)
+                .left(-180)
+                .arc(radius/3,360/6,true)
+                .left(-180)
+                .arc(radius/3,360/6,true)
+                .left(60)
+                .arc(radius/3,360/6,true)
+                .left(180)
+                .arc(radius/3,360/6,true)
+                .left(60)
+                .arc(radius/3,360/6,true)
+                .left(120)
+                .arc(radius/3,360/6,false)
+                .left(-120)
+                .arc(radius/3,360/6,false)
+                .right(60)
+                .arc(radius/3,360/6,true)
+                .right(120)
+                .arc(radius/3,360/6,false)
+                .right(-60)
+                .arc(radius/3,360/6,false)
+                .right(-60)
+                .arc(radius/3,360/6,false)
+                go_center(center_left);
+                
+        }
+        turtle.right(30)
+    }
+    function side_round(radius){
+        turtle
+        .penDown()
+        .right(30)
+        .arc(radius/3,360,true)
+        .right(360/6)
+        .arc(radius/3,360,true)
+        .right(360/6)
+        .arc(radius/3,360,true)
+        .right(360/6)
+        .arc(radius/3,360,true)
+        .right(360/6)
+        .arc(radius/3,360,true)
+        .right(360/6)
+        .arc(radius/3,360,true)
+    }
+
+   turtle.setSize(0)
+
+    function go_center(center_left){
+        turtle.setPosition(center_left, parseInt(window_height/2));
+    }
+    function randomInteger(max) {
+        return Math.floor(Math.random()*(max + 1));
+    }
+
+
+
+    </script>
+</body>
+
+</html>
