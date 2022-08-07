@@ -17,13 +17,14 @@
     <script>
     let window_width = window.innerWidth;
     let window_height = window.innerHeight;
-    var radius = 250;
+    var radius = 220;
     turtle.setLineWidth(3);
     turtle.setSpeed(0.99);
 
-    flower_of_life(radius,parseInt(window_width/6 * 0));
+
+    flower_of_life(radius,parseInt(window_width/6 * 1));
     flower_of_life(radius,parseInt(window_width/6 * 3));
-    flower_of_life(radius,parseInt(window_width/6 * 6));
+    flower_of_life(radius,parseInt(window_width/6 * 5));
 
     function flower_of_life(radius,center_left){
         //turtle.setStrokeColorRGB(255, 215, 0);
