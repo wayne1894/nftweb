@@ -1,0 +1,77 @@
+.service_row{
+  display: flex;
+  gap: 20px;
+}
+.service_row_parent{
+  width: 100%;
+  padding: 20px;
+  background: #D01A48;
+}
+
+.service_col{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  .service_img{
+    width: 100%;
+    height: 330px;
+    .inner{
+      width: 100%;
+      height: 100%;
+      background-position: 50%;
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
+  .service_text{
+    background-color: currentColor;
+    padding: 16px;
+    padding-top: 12px;
+    position: relative;
+    overflow: hidden;
+    .service_bg{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      margin-left: 12px;
+      background-repeat: no-repeat;
+    }
+    .service_parent{
+      margin-left: 182px;
+      padding-top: 19px;
+      padding-bottom: 36px;
+      h3{
+        color: #ffffff;
+        font-size: 32px;
+        margin-bottom: 18px;
+        letter-spacing: 0.04em;
+        a{
+           color: #ffffff;
+        }
+      }
+      p{
+        color: #ffffff;
+        line-height: 25px;
+        height: 73px;
+        overflow: hidden;
+        font-size: 0.94rem;
+      }
+    }
+    .service_more{
+      width: 231px;
+      height: 61px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: inline-block;
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 219.7 56.7' style='enable-background:new 0 0 219.7 56.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23ffffff;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0,56.7h219.7V0.1C134.2-1.5,68.3,22.9,0,56.7z'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      color: currentColor;
+      text-align: right;
+      padding-top: 25px;
+      font-weight: bold;
+      border-bottom-right-radius: 20px;
+    }
+  }
+}
+

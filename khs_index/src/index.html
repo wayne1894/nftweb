@@ -10,9 +10,32 @@
 <body>
     <header>
         @@include("include/nav.html")
+        <div class="bottom_area">
+          <h1>
+            全心灌溉熱愛音樂的幼苗
+            <button id="youtube_button" class="youtube_play"></button>
+          </h1>
+          <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
+          <a href="#">關於我們</a>
+        </div>
+        <a id="go_down" class="go_down" href="#">down</a>
+
     </header>
     <div class="main">
-      
+      <div class="service">
+        <h2 class="service_header">
+          <div class="container">
+            <span>服務項目</span>
+          </div>
+        </h2>
+        <div class="service_row_parent">
+          <div class="service_row container">
+            @@include("include/service_col.html")
+            @@include("include/service_col.html")
+          </div>
+        </div>
+      </div>
+
     </div>
 </body>
 </html>
