@@ -1,0 +1,27 @@
+@import "_variables"; //變數編譯
+@import "_normalize";
+@import "_reset";
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+::selection{
+    background-color: #D01A48;
+    color: #ffffff;
+}
