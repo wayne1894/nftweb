@@ -27,9 +27,7 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 #### 08/16
 ### [19、Javascript 勇者鬥惡龍 - function](https://docs.google.com/presentation/d/1848hrRbLcO1GKFFunDQo5-U6zkBBMmsgRKk_0fefq2w/edit?usp=sharing)
 ### [20、khs 首頁切版與檢討 ](https://docs.google.com/presentation/d/1612ycFS5oosKjhmTSvj7pIJ4yfcvrFNNVba2qsz5JWQ/edit?usp=sharing)
-<!--
-### [21、Javascript 勇者鬥惡龍 - object](https://docs.google.com/presentation/d/1rqltXin6mxFfStlMdaQjRxfse9_bxuRainKebzYe5H0/edit?usp=sharing)
--->
+### [21、Javascript 勇者鬥惡龍 - array](https://docs.google.com/presentation/d/1xPeLGmFhxC6fW_fL3w9M9zysdn_SEpSDiPaUYKgYrmI/edit?usp=sharing)
 
 
 //BEM命名法 補充
