@@ -34,3 +34,4 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 
 //BEM命名法 補充
 //駝峰命名法
+//javascript splice

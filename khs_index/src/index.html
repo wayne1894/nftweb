@@ -31,8 +31,12 @@
         </h2>
         <div class="service_row_parent">
           <div class="service_row container">
-            @@include("include/service_col.html")
-            @@include("include/service_col.html")
+            @@include("include/service_col.html",{
+              "bg_class" : "bg1"
+            })
+            @@include("include/service_col.html",{
+              "bg_class" : "bg2"
+            })
           </div>
         </div>
       </div>
@@ -40,9 +44,13 @@
         <div class="container">
           <h2><span>最新消息</span></h2>
           <div class="news_row">
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
-            @@include("include/news_col.html")
+          
+          @@for (var i = 0; i < 10; i++) {
+            @@include("include/news_col.html",{
+              "img" : "https://picsum.photos/800/600?random=`+i+`",
+              "name" : "彩繪你的鋼琴！ 音樂夢想就不遠囉！1"
+            })
+          }
 
           </div>
           <div class="news_block">

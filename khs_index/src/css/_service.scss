@@ -29,6 +29,12 @@
     padding-top: 12px;
     position: relative;
     overflow: hidden;
+    &.bg1{
+      background: green;
+    }
+    &.bg2{
+      background: blue;
+    }
     .service_bg{
       width: 150px;
       height: 150px;
