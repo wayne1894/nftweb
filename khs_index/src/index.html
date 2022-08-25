@@ -7,6 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+
+ 
+
+    
 </head>
 <body>
     <header>
@@ -20,6 +27,12 @@
           <a href="#">關於我們</a>
         </div>
         <a id="go_down" class="go_down" href="#">down</a>
+        
+        <div id="header_slider" class="header_slider">
+          <div style="background-image: url(https://picsum.photos/800/600?random=1)"></div>
+          <div style="background-image: url(https://picsum.photos/800/600?random=2)"></div>
+          <div style="background-image: url(https://picsum.photos/800/600?random=3)"></div>
+        </div>
 
     </header>
     <div class="main">
@@ -60,5 +73,28 @@
       </div>
 
     </div>
+    
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.header_slider').slick({
+          arrows : false,
+          dots: true,
+          infinite: true,
+          speed: 400,
+          waitForAnimate : true,
+          fade: true,
+          cssEase: 'ease-in-out'
+        });
+      })
+      
+    </script>  
+
+
+  
+    
 </body>
 </html>
