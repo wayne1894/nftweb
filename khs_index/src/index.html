@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="css/main.css">
     
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
 
- 
-
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     
 </head>
 <body>
     <header>
         @@include("include/nav.html")
         <div class="bottom_area">
-          <h1>
+          <h1 class="wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1s">
             全心灌溉熱愛音樂的幼苗
             <button id="youtube_button" class="youtube_play"></button>
           </h1>
-          <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
-          <a href="#">關於我們</a>
+          <p class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="1s">功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
+          <a class="wow fadeInLeft" data-wow-delay="1.2s" data-wow-duration="1s" href="#">關於我們</a>
         </div>
         <a id="go_down" class="go_down" href="#">down</a>
         
@@ -61,7 +62,10 @@
           @@for (var i = 0; i < 10; i++) {
             @@include("include/news_col.html",{
               "img" : "https://picsum.photos/800/600?random=`+i+`",
-              "name" : "彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢想就不遠囉！1"
+              "name" : "彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！ 音樂夢想就不遠囉！1",
+              "wow" : "fadeInLeft",
+              "delay" : "0.`+(i+1)+`s",
+              "duration" : "1s"
             })
           }
 
@@ -77,6 +81,8 @@
    
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+ 
     
     <script>
       $(document).ready(function(){
