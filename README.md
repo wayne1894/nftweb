@@ -30,6 +30,8 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [21、Javascript 勇者鬥惡龍 - array](https://docs.google.com/presentation/d/1xPeLGmFhxC6fW_fL3w9M9zysdn_SEpSDiPaUYKgYrmI/edit?usp=sharing)
 ### [22、web 動畫技術應用與研究 - 1](https://docs.google.com/presentation/d/1Ma04h9FO6Q7LBeVYD8n5StjA9saXDnOr5yO7MA5_S2U/edit?usp=sharing)
 
+### [23、Javascript 勇者鬥惡龍 - object ](https://docs.google.com/presentation/d/1rqltXin6mxFfStlMdaQjRxfse9_bxuRainKebzYe5H0/edit?usp=sharing)
+### [24、khs 首頁特效與互動](https://docs.google.com/presentation/d/1CJnjVdt_LrG2Td7dxWUhcwOEqlnZWEvOPg2AI3QssT8/edit?usp=sharing)
 
 
 //BEM命名法 補充
