@@ -1,3 +1,4 @@
+var parallaxInstance //第一頁視差使用
 var scroll_start = false;
 var page_now = 0;//現在的頁次
 var section = document.querySelectorAll("main>section");
@@ -25,6 +26,12 @@ function wheel(e){
  
 }
 
+function set_parallax(){
+  //https://github.com/wagerfield/parallax
+  var section_1 =  document.getElementById("section_1");
+  parallaxInstance =  new Parallax(section_1)
+}
+
 function move_page(page_index){
   gsap.to(window, 0.5, {
     scrollTo: section[page_index],
@@ -37,3 +44,6 @@ function move_page(page_index){
     }
   });
 }
+
+
+set_parallax()
