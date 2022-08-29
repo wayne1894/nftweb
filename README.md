@@ -33,8 +33,13 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [23、Javascript 勇者鬥惡龍 - object ](https://docs.google.com/presentation/d/1rqltXin6mxFfStlMdaQjRxfse9_bxuRainKebzYe5H0/edit?usp=sharing)
 ### [24、khs 首頁特效與互動](https://docs.google.com/presentation/d/1CJnjVdt_LrG2Td7dxWUhcwOEqlnZWEvOPg2AI3QssT8/edit?usp=sharing)
 ### [25、Javascript 勇者鬥惡龍 - 內鍵物件 ](https://docs.google.com/presentation/d/16aEeckpocIciXxcs3jlWWXuDSH4Yw78_GqWO0LBS7o4/edit?usp=sharing)
+### [26、Javascript 勇者鬥惡龍 - 事件 ](https://docs.google.com/presentation/d/1PDMfnmkDHAnZlTnZgz8Gq7FJuWBjw3cPMURNNnMzHpg/edit?usp=sharing)
+
+#### 08/29
+
+### [27、Javascript 勇者鬥惡龍 - DOM ](https://docs.google.com/presentation/d/1uiG7CZE7m7O0C9hYbl2uUAMQPTQYywTb-02h05Gkayg/edit?usp=sharing)
+### [28、web 動畫技術應用與研究 - gsap ](https://docs.google.com/presentation/d/1Eqf6GZZbaKS33HK9oImPlpb-KovmJErq870rEYy7Auc/edit?usp=sharing)
 
 
 //BEM命名法 補充
 //駝峰命名法
-//javascript splice
