@@ -4,8 +4,6 @@ var page_now = 0;//現在的頁次
 var section = document.querySelectorAll("main>section");
 var last_page_index = section.length - 1;//最後一頁
 
-window.addEventListener('wheel', wheel);
-
 function wheel(e){
   if(page_now == last_page_index && e.wheelDelta < 0) return
   if(page_now == last_page_index && section[page_now].scrollTop > 150) return
@@ -46,4 +44,8 @@ function move_page(page_index){
 }
 
 
-set_parallax()
+window.addEventListener('wheel', wheel);
+document.addEventListener('DOMContentLoaded', (event) => {
+  set_parallax()
+})
+
