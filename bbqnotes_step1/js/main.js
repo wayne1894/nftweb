@@ -35,8 +35,8 @@ function move_page(page_index){
     scrollTo: section[page_index],
     onStart : function(){
     },onComplete : function(){
+      page_now = page_index;
       setTimeout(function(){
-        page_now = page_index
         scroll_start = false;
       },1000)
     }

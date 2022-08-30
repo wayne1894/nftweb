@@ -9,24 +9,31 @@ html {
     box-sizing: inherit;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
 body {
   overflow: hidden;
+  font-family: "微軟正黑體", "Microsoft JhengHei", san-serif;
 }
+
 main,
-section {
-  width: 100%;
-  height: 100vh;
-  background: #E2695B
+section{
+    width: 100%;
+    height: 100%;
+    background: #E2695B;
 }
-#section_4{
-  overflow-y: auto;
-}
-section>div{
+
+/*#section_1*/
+/*https://github.com/wagerfield/parallax*/
+#section_1>div{
   width: 100%;
   height: 100%;
 }
-
-/*https://github.com/wagerfield/parallax*/
 #bg1{
   background-repeat: no-repeat;
   background-position: 50% 50%;
