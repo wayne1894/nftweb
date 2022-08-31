@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--maximum-scale=1.0; user-scalable=0;-->
+<title>功學社專案</title>
+<link rel="stylesheet" type="text/css" href="css/svg.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+<script type="text/javascript" src="js/vendor/wow.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="js/partials/jquery.easing.js"></script>
+<script type="text/javascript" src="js/partials/nav.js"></script>
+<script src="js/global.js"></script>
+<script type="text/javascript" src="js/partials/footer.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+</head>
+<body class="init">
+  <script>
+//  if(window.attachEvent) {
+//    window.attachEvent('onload', _init);
+//  } else {
+//    window.onload = _init;
+//  }
+  $(function(){
+    _init();
+  })
+   //wow
+  //https://wowjs.uk/docs.html
+  //scrollReveal.js
+  //https://css-tricks.com/aos-css-driven-scroll-animation-library/
+  //http://scrollmagic.io/
+  //http://johnpolacek.github.io/superscrollorama/
+  //http://scrollmagic.io/
+  //使用Skrollr.js
+  
+  //https://stanhub.com/how-to-make-div-element-100-height-of-browser-window-using-css-only/   css 視差效果
+  
+//parallax DEMO ihatetomatoes.net/demos/simple-parallax-scrolling-tutorial/
+
+  var skrollr;
+  //var is_init = false ;
+  function _init(){
+//$(window).resize();
+//    if(msieversion()){
+//     
+//    }
+    //if(is_init) return;
+    //is_init = true;
+    $("body").removeClass("init");
+//    $("body").css("overflow-y","hidden");
+    $(".left").css("height",$(".right").height());
+    if(!is_mobileAndTabletcheck){
+      new WOW().init();
+      if(skrollr)skrollr.init();
+    }
+       $("#lightbox1").animate({opacity : 0},800, 'easeInQuint',function(){
+
+         $("#lightbox1").remove();
+         $("#loading").animate({opacity : 0},300, 'easeOutCubic',function(){
+           $("body").css( "background-color","transparent").css("overflow-y","")
+            $("#loading").remove();
+         });
+       });
+  }
+</script>
+
+<style>
+  
+  
+/*https://www.puritys.me/docs-blog/article-353-CSS-3D-%E6%97%8B%E8%BD%89-rotate3d-%E8%88%87-translate3d.html*/
+/*
+@keyframes loading {
+   0% {
+     transform: perspective(500px) rotate3d(0,0,0, 0) translate3d(0, 0, 0px);
+  }
+   100% {
+     transform: perspective(500px) rotate3d(0, 1, 0, 720deg) translate3d(0, 0, -150px);
+  }
+}
+*/
+ @-webkit-keyframes loading2 {
+   0% {
+    transform: translateY(15px);
+    opacity: .7;
+   }
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+  }
+  
+@keyframes loading2 {
+   0% {
+/*    bottom: 0px;*/
+     transform: translateY(15px);
+/*    transform: scale(1, 1);*/
+    opacity: .7;
+  }
+
+  100% {
+/*    bottom: 15px;*/
+      transform: translateY(0px);
+/*    transform: scale(1.15, 1.15);*/
+    opacity: 1;
+  }
+}
+  body.init{
+    overflow-y: hidden;
+    background-color: #D01A48;
+    background-color: #cc9650;
+  }
+  body.init>*{
+    display: none;
+  }
+  .logo_1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     animation: loading2 .95s infinite alternate;
+    -moz-animation: loading2 .95s infinite alternate;
+    -webkit-animation: loading2 .95s infinite alternate;
+/*    animation-direction:alternate-reverse;*/
+    animation-timing-function: ease-in-out;
+  }
+  #loading{
+/*
+    animation: loading 3s infinite alternate;
+    -moz-animation: loading 3s infinite alternate;
+    -webkit-animation: loading 3s infinite alternate;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+*/
+    z-index: 10001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 75px;
+    margin-left: -70px;
+    margin-top: -40px;
+    opacity: 1;
+    display: block;
+  }
+  #lightbox1{
+    opacity:1;
+
+    position: fixed;
+    top: 0; left: 0;right: 0;bottom: 0;
+    z-index: 10000;
+    background-color: #D01A48;
+    background-color: #cc9650;
+
+  /*
+    box-shadow: 0 0 0 50vmax #D01A48;
+    box-shadow: 0 0 0 50vmax #cc9650;
+  */
+    display: block;
+  }
+ ::selection {
+  background-color: #D01A48;
+  background-color: #cc9650;
+  color: #ffffff;
+  }
+  ::-moz-selection {
+    
+  background-color: #D01A48;
+  background-color: #cc9650;
+  color: #ffffff;
+  }
+  img::selection {
+  background: transparent;
+  }
+  img::-moz-selection {
+  background: transparent;
+  }
+
+</style>
+
+<div id="loading">
+  <div class="logo_1"></div>
+</div>
+<div id="lightbox1"></div>
+
+ <nav id="nav">
+  <div id="nav_search">
+    <input type="text" value="" placeholder="搜尋">
+  </div>
+  <a class="logo" title="功學社音樂中心" href="index.html">khs</a>
+  <ul class="nav_left">
+    <li>
+      <a href="about.html">關於我們</a>
+      <div class="nav_menu">
+        <div class="nav_menu_area">
+          <ol>
+            <li><a href="about.html">公司簡介</a></li>
+            <li><a href="about2.html">集團大事紀</a></li>
+            <li><a href="about3.html">品牌故事</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="about.html">關於我們</a></h4>
+          <ol>
+            <li><a href="about.html">公司簡介</a></li>
+            <li><a href="about2.html">集團大事紀</a></li>
+            <li><a href="about3.html">品牌故事</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li>
+    <a href="news.html">最新消息</a>
+      <div class="nav_menu">
+        <div class="nav_menu_area">
+          <ol>
+            <li><a href="news.html">活動快訊</a></li>
+            <li><a href="news.html">產品消息</a></li>
+            <li><a href="news.html">音樂教育</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="news.html">最新消息</a></h4>
+          <ol>
+            <li><a href="news.html">活動快訊</a></li>
+            <li><a href="news.html">產品消息</a></li>
+            <li><a href="news.html">音樂教育</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li>
+      <a class="bg_c_1" href="product.html">產品介紹</a>
+      <div class="nav_menu h-364">
+        <div class="nav_menu_area">
+          <h4><a href="product.html">產品介紹</a></h4>
+          <ol>
+            <li><a href="product2.html">管樂器</a></li> 
+            <li><a href="product2.html">弦樂器</a></li>
+            <li><a href="product2.html">口琴/手風琴</a></li>
+            <li><a href="product2.html">鍵盤樂器</a></li>
+            <li><a href="product2.html">熱門樂器</a></li>
+            <li><a href="product2.html">打擊樂器</a></li>
+            <li><a href="product2.html">零配件</a></li>
+            <li><a href="product2.html">其他</a></li>
+          </ol>
+        </div>
+        <div class="nav_menu_area">
+          <h4><a href="product4.html">中古琴</a></h4>
+          <ol>
+           <li><a href="product4.html">中古琴介紹</a></li>
+           <li><a href="product6.html">選琴訣竅</a></li>
+           <li><a href="product10.html">鍵盤維修</a></li>
+           <li><a href="service.html">聯絡我們</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="product2.html">產品介紹</a></h4>
+          <ol>
+            <li><a href="product2.html">管樂器</a></li> 
+            <li><a href="product2.html">弦樂器</a></li>
+            <li><a href="product2.html">口琴/手風琴</a></li>
+            <li><a href="product2.html">鍵盤樂器</a></li>
+            <li><a href="product2.html">熱門樂器</a></li>
+            <li><a href="product2.html">打擊樂器</a></li>
+            <li><a href="product2.html">零配件</a></li>
+            <li><a href="product2.html">其他</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li class="mobile_use">
+      <a href="product.html">中古琴</a>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="product4.html">中古琴</a></h4>
+          <ol>
+            <li><a href="product4.html">中古琴介紹</a></li>
+            <li><a href="product6.html">選琴訣竅</a></li>
+            <li><a href="product10.html">鍵盤維修</a></li>
+            <li><a href="service.html">聯絡我們</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li>
+      <a class="bg_c_2" href="music.html">音樂教育</a>
+      <div class="nav_menu">
+        <div class="nav_menu_area">
+          <ol>
+           <li><a href="music2.html">兒童課程</a></li>
+           <li><a href="music3.html">成人課程</a></li>
+           <li><a href="music4.html">嚴選師資</a></li>
+           <li><a href="store.html">教室查詢</a></li>
+           <li><a href="music5.html">課程諮詢</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="music.html">音樂教育</a></h4>
+          <ol>
+           <li><a href="music2.html">兒童課程</a></li>
+           <li><a href="music3.html">成人課程</a></li>
+           <li><a href="music4.html">嚴選師資</a></li>
+           <li><a href="store.html">教室查詢</a></li>
+           <li><a href="music5.html">課程諮詢</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li>
+      <a href="store.html">門市據點</a>
+      <div class="nav_menu">
+        <div class="nav_menu_area">
+          <ol>
+            <li><a href="store.html">門市/教室介紹</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="store.html">門市據點</a></h4>
+          <ol>
+            <li><a href="store.html">門市/教室介紹</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+    <li>
+      <a href="service.html">服務中心</a>
+      <div class="nav_menu">
+        <div class="nav_menu_area">
+          <ol>
+            <li><a href="service.html">聯絡我們</a></li>
+            <li><a href="service2.html">管樂器維修</a></li>
+            <li><a href="service4.html">樂器保養知識</a></li>
+            <li><a href="service5.html">好站連結</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_menu_m">
+        <div class="nav_menu_area">
+          <h4><a href="service.html">服務中心</a></h4>
+          <ol>
+            <li><a href="service.html">聯絡我們</a></li>
+            <li><a href="service2.html">管樂器維修</a></li>
+            <li><a href="service4.html">樂器保養知識</a></li>
+            <li><a href="service5.html">好站連結</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="nav_block"></div>
+    </li>
+  </ul>
+  <a id="h_search" class="h_search" title="search" >search</a>
+  <ul class="nav_right">
+    <li><a class="h_facebook" title="facebook" href="#">facebook</a></li>
+    <li><a class="h_youtube" title="youtube" href="#">youtube</a></li>
+    <li><a class="h_line" title="line" href="#">line</a></li>
+  </ul>
+  <div id="nav_mobile">
+    <div class="menu">
+      <div class="line line0"></div>
+      <div class="line_parent">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+  <header>
+    <style>
+  .slick-dots li.slick-active button{
+background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='13.239px' height='32.787px' viewBox='0 0 13.239 32.787' enable-background='new 0 0 13.239 32.787' xml:space='preserve'%3e%3cg%3e%3cg%3e%3cellipse transform='matrix(0.8938 -0.4484 0.4484 0.8938 -11.6672 5.897)' fill='%23cc9650' cx='6.619' cy='27.586' rx='7.03' ry='4.626'/%3e%3c/g%3e%3crect x='12.16' fill='%23cc9650' width='1.079' height='25.864'/%3e%3c/g%3e%3c/svg%3e");
+  }
+  #header_slider>div{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 700ms ease-out;
+  }
+  #header_slider>div.show{
+    opacity: 1;
+    z-index: 1;
+  }
+
+</style>
+
+  
+ <div class="header_wrap">
+    <div class="bottom_area product">
+      <h1 class="wow fadeInLeft" data-wow-delay=".6s" data-wow-duration="1s">各廠牌樂器販售&代理功學社專營</h1> 
+      <p class="wow fadeInLeft" data-wow-delay=".9s" data-wow-duration="1s">自1930年至今，功學社專營教育用品與樂器品牌，深耕台灣市場80餘年，始終用呵護備至的父母心，滿足您在音樂學習路上的所有需求。</p>
+      <a class="wow fadeInLeft" data-wow-delay="1.2s" data-wow-duration="1s" href="#">產品介紹</a>
+    </div>
+    <a id="go_down" class="go_down" href="#">down</a>
+    <div id="header_slider" class="header_slider">
+      <div class="show h_bg" style="background-image: url(images/bg/bg-33.png)"></div>
+      <div class="h_bg" style="background-image: url(images/bg/bg-34.png)"></div>
+      <div class="h_bg" style="background-image: url(images/bg4/3.png)"></div>
+    </div>
+   <ul class="slick-dots">
+     <li class="slick-active"><button type="button">1</button></li>
+     <li><button type="button">2</button></li>
+     <li><button type="button">3</button></li>
+   </ul>
+</div>
+
+
+<script>
+ $(function(){
+      $(".slick-dots button").on("click",function(){
+        var _index=$(this).parent().index();
+        $(this).parent().stop().hide().addClass("slick-active").fadeIn(1000).siblings().removeClass("slick-active");
+        $("#header_slider>div").eq(_index).addClass("show").siblings().removeClass("show");
+      })
+    })
+</script>
+  </header>
+  <script>
+  function gotourl(){
+    window.location="product2.html"
+  }
+      function gotourl2(){
+    window.location="product4.html"
+  }
+  </script>
+  <div class="main" style="padding-bottom: 140px;">
+    <div class="container">
+    
+    <div class="product_wrap">
+       <div class="product_columns wow fadeIn" data-wow-delay=".4s" style="background-image: url(images/bg5/39.png)" onclick="gotourl()">
+         <div class="top_img1"></div>
+         <h2>樂器產品</h2>
+         <div class="wrap1">
+           <div class="wrap2">
+             <h3>樂器產品</h3>
+             <div class="two_more">
+                <a href="product2.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+           <div class="p_line"></div>
+           <p>自1930年至今，功學社專營教育用品與樂器品牌，已經深耕台灣市場80餘年，始終用呵護備至的父母心，滿足您在音樂學習路上的所有需求。是全球前三大管樂器、鼓樂器品牌公司，從製造到品牌行銷跨足全球60多國。</p>
+         </div>
+         <div class="top_img2"></div>
+       </div>
+       <div class="product_columns wow fadeIn" data-wow-delay=".7s"  style="background-image: url(images/bg5/40.png)" onclick="gotourl2()">
+         <div class="top_img1"></div>
+         <h2>中古琴</h2>
+         <div class="wrap1">
+           <div class="wrap2">
+             <h3>中古琴</h3>
+             <div class="two_more">
+                <a href="product4.html">了解更多<span class="arrow"></span></a>
+             </div>
+           </div>
+           <div class="p_line"></div>
+           <p>自1930年至今，功學社專營教育用品與樂器品牌，已經深耕台灣市場80餘年，始終用呵護備至的父母心，滿足您在音樂學習路上的所有需求。是全球前三大管樂器、鼓樂器品牌公司，從製造到品牌行銷跨足全球60多國。</p>
+         </div>
+         <div class="top_img2"></div>
+       </div>
+    </div>
+    <script>
+      $(function(){
+        $(".product_columns").hover(function(){
+          $(this).find(".wrap1").show();
+
+          $(this).find("h3").addClass("fadeInDown2");
+          $(this).find(".p_line").addClass("fadeInDown2");
+          $(this).find("p").addClass("fadeInDown2");
+          $(this).find(".two_more").addClass("fadeInLeft2");
+          
+        },function(){
+          $(this).find(".wrap1").hide();
+   
+          $(this).find("h3").removeClass("fadeInDown2");
+          $(this).find(".p_line").removeClass("fadeInDown2");
+          $(this).find("p").removeClass("fadeInDown2");
+          $(this).find(".two_more").removeClass("fadeInLeft2");
+        })
+      })  
+      
+    </script>
+   
+    </div>
+
+    <div class="product_service">
+       <div class="service">
+        <h2 class="h2_index">
+          <div class="container">
+            <span class="wow fadeInRight">產品分類</span>
+          </div>
+        </h2>
+        <div class="service_wrap">
+          <div class="container product_list_wrap">
+             <a href="product2.html" class="product_list wow scale" data-wow-delay="0s" style="background-image: url(images/bg5/69.png)"><h3>管樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.15s" class="product_list wow scale" style="background-image: url(images/bg5/70.png)"><h3>弦樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.3s" class="product_list wow scale" style="background-image: url(images/bg5/71.png)"><h3>口琴/手風琴</h3></a>
+             <a href="product2.html" data-wow-delay="0.45s" class="product_list wow scale" style="background-image: url(images/bg5/72.png)"><h3>鍵盤樂器</h3></a>
+          </div>
+          <div class="container product_list_wrap">
+             <a href="product2.html" data-wow-delay="0.6s" class="product_list wow scale" data-wow-offset="-280" style="background-image: url(images/bg5/73.png)"><h3>熱門樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.75s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/74.png)"><h3>打擊樂器</h3></a>
+             <a href="product2.html" data-wow-delay="0.9s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/75.png)"><h3>零配件</h3></a>
+             <a href="product2.html" data-wow-delay="1.05s" data-wow-offset="-280" class="product_list wow scale" style="background-image: url(images/bg5/76.png)"><h3>其他</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product_view container">
+      <h2 class="h2 music"><span class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">中古琴介紹</span></h2>
+      <div class="view_wrap">
+         <ul class="view_ul wow fadeInRight" data-wow-delay=".2s">
+           <li><a href="product4.html">中古琴介紹</a></li>
+           <li><a href="product6.html">選琴訣竅</a></li>
+           <li><a href="product10.html">鍵盤維修</a></li>
+           <li><a href="service.html">聯絡我們</a></li>
+         </ul>
+         <div class="view_left">
+           <h3 class="wow fadeIn" data-wow-delay=".3s">功學社認證中古琴「五大保證」</h3>
+           <div class="view_line1 wow ablineIn" data-wow-delay=".5s"></div>
+             <p class="wow fadeInUp" data-wow-delay=".6s">功學社了解您對中古琴購買的擔憂，因此功學社認證中古琴承諾每一位擁琴者五大保證：<br>
+            # 保證三年保固<br>
+            # 保證原廠製造號碼<br>
+            # 保證原廠零件整修<br>
+            # 保證無蛀蟲泡水琴<br>
+            # 全國售後服務網(一家購買，全台服務)</p>
+          <div class="view_line2 wow ablineIn" data-wow-offset="-160" data-wow-delay=".5s"></div>
+         </div>
+         <div class="view_right">
+           <div class="view_img wow fadeIn" data-wow-delay=".8s" style="background-image: url(images/bg5/88.png)"></div>
+         </div>
+      </div>
+    </div>
+   
+   
+    <div data-start="top:7%"  data-1300="top:23%" data-1600="top:24.5%" data-1900="top:26.5%" data-2200="top:27%" class="m_bg">
+       <img src="images/bg7.png" alt="">
+       <div class="bg_w"><img src="images/bg8.png"></div>
+    </div>
+
+  </div>
+
+    <link rel="stylesheet" type="text/css" href="css/global_footer.css" />
+<footer>
+<a id="toTop" class="c_cc9650" href="#">
+  <span class="arrowTop"></span>
+</a>
+<div class="container">
+    <div class="footer_left">
+      <a class="logo" title="功學社音樂中心" href="index.html">logo</a>
+    </div>
+    <div class="footer_right">
+      <div class="footer_nav">
+        <div class="info_block">
+          <h4 class="o/n"><a href="about.html">關於我們</a></h4>
+          <ol>
+            <li><a href="about.html">公司簡介</a></li>
+            <li><a href="about2.html">集團大事紀</a></li>
+            <li><a href="about3.html">品牌故事</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+          <h4><a href="news.html">最新消息</a></h4>
+          <ol>
+            <li><a href="news1.html">活動快訊</a></li>
+            <li><a href="news2.html">產品消息</a></li>
+            <li><a href="news3.html">音樂教育</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+            <h4><a href="product.html">產品介紹</a></h4>
+          <ol>
+            <li><a href="product2.html">管樂器</a></li> 
+            <li><a href="product2.html">弦樂器</a></li>
+            <li><a href="product2.html">口琴/手風琴</a></li>
+            <li><a href="product2.html">鍵盤樂器</a></li>
+            <li><a href="product2.html">熱門樂器</a></li>
+            <li><a href="product2.html">打擊樂器</a></li>
+            <li><a href="product2.html">零配件</a></li>
+            <li><a href="product2.html">其他</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+          <h4><a href="product4.html">中古琴</a></h4>
+          <ol>
+           <li><a href="product4.html">中古琴介紹</a></li>
+           <li><a href="product6.html">選琴訣竅</a></li>
+           <li><a href="product10.html">鍵盤維修</a></li>
+           <li><a href="service.html">聯絡我們</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+          <h4><a href="music.html">音樂教育</a></h4>
+          <ol>
+           <li><a href="music2.html">兒童課程</a></li>
+           <li><a href="music3.html">成人課程</a></li>
+           <li><a href="music4.html">嚴選師資</a></li>
+           <li><a href="store.html">教室查詢</a></li>
+           <li><a href="music5.html">課程諮詢</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+          <h4><a href="store.html">門市據點</a></h4>
+          <ol>
+            <li><a href="store.html">門市/教室介紹</a></li>
+          </ol>
+        </div>
+        <div class="info_block">
+           <h4><a href="service.html">服務中心</a></h4>
+          <ol>
+            <li><a href="service.html">聯絡我們</a></li>
+          </ol>
+          <ol>
+            <li><a href="service2.html">管樂器維修</a></li>
+          </ol>
+          <ol>
+            <li><a href="service4.html">樂器保養知識</a></li>
+          </ol>
+          <ol>
+            <li><a href="service5.html">好站連結</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="footer_copyright">© 2018 KHS Musical Co., Ltd, all rights reserved. Design by <a target="_blank" href="//lugo.tw">Lugo</a></div>
+    </div>
+  </div>
+<div class="footer_area wow fadeIn" data-wow-duration="1s">
+    <h4>社群連結</h4>
+    <ul>
+      <li><a class="f_facebook" href="#">facebook</a></li>
+      <li><a class="f_youtube" href="#">youtube</a></li>
+      <li><a class="f_line" href="#">Line</a></li>
+    </ul>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
