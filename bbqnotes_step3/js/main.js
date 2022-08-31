@@ -207,3 +207,69 @@ document.addEventListener('DOMContentLoaded', (event) => {
 })
 
 
+
+
+  function open_conveyor_modal(){
+    
+  $("#conveyor_modal").off("scroll").on("scroll",function(){
+     var _scroll=-$("#conveyor_modal").scrollTop();
+     $(".triangle_left").css("bottom",_scroll);
+     $(".triangle_right").css("bottom",_scroll);
+  })
+    setTimeout(function(){
+       $("#conveyor_modal").scrollTop(0)
+    },0)
+
+    
+    $('#lightbox').fadeIn(300);
+    $('#lightbox_right').fadeIn(300);
+    //$("#conveyor_svg").hide()
+    
+    $("#conveyor_modal").show();
+    $("#conveyor_modal_close").off("click").on("click",close_conveyor_modal)
+    $("#lightbox").off("click").on("click",close_conveyor_modal)
+
+    if(tween3) tween3.kill()
+    if(tween2) tween2.kill()
+
+    tween2 = TweenMax.from("#conveyor_modal", open_time , {
+     x: "100%" ,
+     opacity :　1,
+     ease: Circ.easeOut,
+     clearProps:"transform",
+     onStart: function(){
+       is_conveyor_tween.pause();
+       is_conveyor_tween2.pause();
+       
+     },
+      onComplete : function(){
+          is_conveyor_tween.pause();
+          is_conveyor_tween2.pause();
+          if(tween2)tween2.kill();
+        
+        TweenMax.from("#u13",.5,{
+          x:-20, 
+          opacity: 0,
+          clearProps:"transform,opacity",
+          onStart:function(){
+            $("#u13").show()
+          },
+          onComplete : function(){
+          
+            TweenMax.to(["#u2","#u4",$("#u3 text")[0]],.6,{opacity :1 , onComplete:function(){
+     
+              tween3=TweenMax.to(["#u8","#u5","#u6","#u7","#u9","#u12","#u10","#u11","#u11-2"],.6,{opacity :1,onComplete:function(){
+                 tween4=TweenMax.staggerTo([$("#u14 .cls-22"),$("#u15 .cls-22"),$("#u16 .cls-22")], .5, {fill:"#E9907B", opacity:1,clearProps:"fill,opacity"}, 0.2);
+              }})
+            }})
+      
+          }
+        })
+
+  
+        }
+      }
+   );
+  }
+
+
