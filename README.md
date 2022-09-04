@@ -40,6 +40,11 @@ NFT加密藝術科技暨創意互動網站開發實戰課程
 ### [27、Javascript 勇者鬥惡龍 - DOM ](https://docs.google.com/presentation/d/1uiG7CZE7m7O0C9hYbl2uUAMQPTQYywTb-02h05Gkayg/edit?usp=sharing)
 ### [28、web 動畫技術應用與研究 - gsap ](https://docs.google.com/presentation/d/1Eqf6GZZbaKS33HK9oImPlpb-KovmJErq870rEYy7Auc/edit?usp=sharing)
 
+#### 09/04
+
+### [29、vue.js 初學指引 ](https://docs.google.com/presentation/d/1kWlM_bEULIt1bSLhSzigpMy7g9OzHy2NPDQYVNp3BuM/edit?usp=sharing)
+### [30、如何搶門票 ](https://docs.google.com/presentation/d/19k6YSLw3wCGOd_nYNIFuQ5uhwA7cmUyZ8TivezkxVl0/edit?usp=sharing)
+
 
 //BEM命名法 補充
 //駝峰命名法
