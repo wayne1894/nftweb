@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/main.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>  
+   <div id="msgSend">
+      <div class="main">
+          <form name="msgSendForm" id="msgSendForm" method="post">
+                  <div id="direct_parent" class="item">
+                      <div class="itemLeft">&nbsp;</div>
+                      <div class="itemRight">
+                          <div class="itemColumn">
+                              <div class="dirLeft">
+                                  <div class="textarea">
+                                      <input type="text" placeholder="請輸入姓名" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                      <input type="text" placeholder="請輸入會員編號" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                    <select>
+                                      <option value="CUSTOM">CUSTOM</option>
+                                      <option value="SMS">簡訊</option>
+                                      <option value="APP">APP</option>
+                                      <option value="LINE">LINE</option>
+                                    </select>
+                                  </div>
+                              </div>
+                              <div class="dirRight">
+                                  <div id="buttonAdd" class="buttonAdd">增加</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="type_parent" class="item">
+                      <div class="itemLeft">發送方式</div>
+                      <div class="itemRight">
+                          <div class="type_column_wrap">
+                              <div class="type_column first-row">
+                                  <div class="opt_1 sign">
+                                      <span class="name">姓名</span>
+                                      <span class="option">選項</span>
+                                  </div>
+                                  <div class="opt_2">
+                                      <span class="relative"><i class="checkAll"></i>自訂</span>
+                                  </div>
+                                  <div class="opt_3">
+                                      <span class="relative"><i class="checkAll"></i>簡訊</span>
+                                  </div>
+                                  <div class="opt_4">
+                                      <span class="relative"><i class="checkAll"></i>APP</span>
+                                  </div>
+                                  <div class="opt_5">
+                                      <span class="relative"><i class="checkAll"></i>LINE</span>
+                                  </div>
+                              </div>
+                              <div id="sendList">
+                                  <div class="type_column">
+                                      <div class="opt_1">
+                                          <div>研發測試</div>
+                                          <div class="type_number">AB0000794582</div>
+                                      </div>
+                                      <div class="opt_2">
+                                          <div class="tick"></div>
+                                      </div>
+                                      <div class="opt_3">
+                                          <div class="tick"></div>
+                                      </div>
+                                      <div class="opt_4">
+                                          <div class="tick"></div>
+                                      </div>
+                                      <div class="opt_5">
+                                          <div class="un_tick"></div>
+                                      </div>
+                                      <a class="c-delete"><i class="tickDel"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <button class="grayBtn w-90" type="reset">清除</button>
+                  <button id="submitBtn" class="greenBtn w-90">確認</button>
+          </form>
+      </div>
+  </div>
+<script>
+
+</script>
+</body>
+
+</html>

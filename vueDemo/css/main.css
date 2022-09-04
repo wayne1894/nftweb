@@ -23,7 +23,7 @@
 }
 
 
-textarea {
+input,select{
   background-color: white;
   display: block;
   padding: 4px 10px;

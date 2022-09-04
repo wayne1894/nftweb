@@ -18,11 +18,22 @@
                           <div class="itemColumn">
                               <div class="dirLeft">
                                   <div class="textarea">
-                                      <textarea placeholder="請輸入會員編號"></textarea>
+                                      <input v-model="info.name" type="text" placeholder="請輸入姓名" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                      <input v-model="info.custNo" type="text" placeholder="請輸入會員編號" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                    <select v-model="info.notifyType">
+                                      <option value="CUSTOM">CUSTOM</option>
+                                      <option value="SMS">簡訊</option>
+                                      <option value="APP">APP</option>
+                                      <option value="LINE">LINE</option>
+                                    </select>
                                   </div>
                               </div>
                               <div class="dirRight">
-                                  <div id="buttonAdd" class="buttonAdd" @click="addParent">增加</div>
+                                  <div @click="add_people" id="buttonAdd" class="buttonAdd">增加</div>
                               </div>
                           </div>
                       </div>
@@ -50,7 +61,7 @@
                                   </div>
                               </div>
                               <div id="sendList">
-                                  <div v-for="(item, index) in custom" class="type_column">
+                                  <div v-for="(item, index) in people" class="type_column">
                                       <div class="opt_1">
                                           <div>{{ item.name }}</div>
                                           <div class="type_number">{{ item.custNo }}</div>
@@ -75,7 +86,7 @@
                   </div>
                   <hr>
                   <button @click="removeAll" class="grayBtn w-90" type="reset">清除</button>
-                  <button id="submitBtn" class="greenBtn w-90">確認</button>
+                  <button @click="submitBtn" id="submitBtn" class="greenBtn w-90">確認</button>
           </form>
       </div>
   </div>
@@ -84,11 +95,15 @@
   const app = createApp({
     data() {
       return {
-        custom: []
+        people: [],
+        info:{
+          notifyType: "CUSTOM"
+        }
       }
     },
     mounted() {//dom 載入後
-      this.custom = [
+      //ajax載入資料
+      this.people = [
           {
                   "custNo": "AB0000794582",
                   "name": "研發測試",
@@ -107,16 +122,23 @@
       ];
     },
     methods: {
+      add_people:function(){
+        let info =  JSON.parse(JSON.stringify(this.info));//避免傳址呼叫
+        this.people.push(info);
+        this.info = {
+          notifyType: "CUSTOM"
+        }
+      },
       first_check: function(notifyType){//檢查是否全部勾選
-        if(!this.custom.length) return ""; //沒有資料回傳空字串
-        for(var i=0;i<this.custom.length;i++){
-          if(this.custom[i].notifyType !== notifyType) return "";
+        if(!this.people.length) return ""; //沒有資料回傳空字串
+        for(var i=0;i<this.people.length;i++){
+          if(this.people[i].notifyType !== notifyType) return "";
         }
         return "check";//代表全都有找到
       },
       first_click: function(notifyType){
-        for(var i=0;i<this.custom.length;i++){
-          this.custom[i].notifyType = notifyType
+        for(var i=0;i<this.people.length;i++){
+          this.people[i].notifyType = notifyType
         }
       },
       tick_click : function (item,notifyType){
@@ -131,13 +153,14 @@
           }
       },
       removeItem: function (index) {
-          this.custom.splice(index, 1);
+          this.people.splice(index, 1);
       },
       removeAll : function(){
-          this.custom = [];
+          this.people = [];
       },
-      addParent:function(){
-
+      submitBtn: function(e){
+        e.preventDefault();//停止事件的預設動作
+        console.log(this.people);//ajax 送給後端
       }
     }
   }).mount('#msgSend');
