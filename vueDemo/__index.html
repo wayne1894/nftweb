@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue demo</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/main.css" />
+  </head>
+  <body>  
+   <div id="msgSend">
+      <div class="main">
+          <form name="msgSendForm" id="msgSendForm" method="post">
+                  <div id="direct_parent" class="item">
+                      <div class="itemLeft">&nbsp;</div>
+                      <div class="itemRight">
+                          <div class="itemColumn">
+                              <div class="dirLeft">
+                                  <div class="textarea">
+                                      <input v-model="info.name" type="text" placeholder="請輸入姓名" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                      <input v-model="info.custNo" type="text" placeholder="請輸入會員編號" />
+                                  </div>
+                                  <div class="textarea" style="margin-top:10px;">
+                                    <select v-model="info.notifyType">
+                                      <option value="CUSTOM">CUSTOM</option>
+                                      <option value="SMS">簡訊</option>
+                                      <option value="APP">APP</option>
+                                      <option value="LINE">LINE</option>
+                                    </select>
+                                  </div>
+                              </div>
+                              <div class="dirRight">
+                                  <div @click="add_people" id="buttonAdd" class="buttonAdd">增加</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="type_parent" class="item">
+                      <div class="itemLeft">發送方式</div>
+                      <div class="itemRight">
+                          <div class="type_column_wrap">
+                              <div class="type_column first-row">
+                                  <div class="opt_1 sign">
+                                      <span class="name">姓名</span>
+                                      <span class="option">選項</span>
+                                  </div>
+                                  <div @click="first_click('CUSTOM')" :class="first_check('CUSTOM')" class="opt_2">
+                                      <span class="relative"><i class="checkAll"></i>自訂</span>
+                                  </div>
+                                  <div @click="first_click('SMS')" :class="first_check('SMS')" class="opt_3">
+                                      <span class="relative"><i class="checkAll"></i>簡訊</span>
+                                  </div>
+                                  <div @click="first_click('APP')" :class="first_check('APP')" class="opt_4">
+                                      <span class="relative"><i class="checkAll"></i>APP</span>
+                                  </div>
+                                  <div @click="first_click('LINE')" :class="first_check('LINE')" class="opt_5">
+                                      <span class="relative"><i class="checkAll"></i>LINE</span>
+                                  </div>
+                              </div>
+                              <div id="sendList">
+                                  <div v-for="(item, index) in people" class="type_column">
+                                      <div class="opt_1">
+                                          <div>{{ item.name }}</div>
+                                          <div class="type_number">{{ item.custNo }}</div>
+                                      </div>
+                                      <div class="opt_2">
+                                          <div @click="tick_click(item,'CUSTOM')" :class="tick_check(item,'CUSTOM')"></div>
+                                      </div>
+                                      <div class="opt_3">
+                                          <div @click="tick_click(item,'SMS')" :class="tick_check(item,'SMS')"></div>
+                                      </div>
+                                      <div class="opt_4">
+                                          <div @click="tick_click(item,'APP')" :class="tick_check(item,'APP')"></div>
+                                      </div>
+                                      <div class="opt_5">
+                                          <div @click="tick_click(item,'LINE')" :class="tick_check(item,'LINE')"></div>
+                                      </div>
+                                      <a @click="removeItem(index)" class="c-delete"><i class="tickDel"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <button @click="removeAll" class="grayBtn w-90" type="reset">清除</button>
+                  <button @click="submitBtn" id="submitBtn" class="greenBtn w-90">確認</button>
+          </form>
+      </div>
+  </div>
+<script>
+  const { createApp } = Vue
+  const app = createApp({
+    data() {
+      return {
+        people: [],
+        info:{
+          notifyType: "CUSTOM"
+        }
+      }
+    },
+    mounted() {//dom 載入後
+      //ajax載入資料
+      this.people = [
+          {
+                  "custNo": "AB0000794582",
+                  "name": "研發測試",
+                  "notifyType": "SMS"
+          },
+          {
+                  "custNo": "AC0007002858",
+                  "notifyType": "LINE",
+                  "name": "測試員"
+          },
+          {
+                  "custNo": "AD0007005633",
+                  "notifyType": "SMS",
+                  "name": "周杰倫"
+          }
+      ];
+    },
+    methods: {
+      add_people:function(){
+        let info =  JSON.parse(JSON.stringify(this.info));//避免傳址呼叫
+        this.people.push(info);
+        this.info = {
+          notifyType: "CUSTOM"
+        }
+      },
+      first_check: function(notifyType){//檢查是否全部勾選
+        if(!this.people.length) return ""; //沒有資料回傳空字串
+        for(var i=0;i<this.people.length;i++){
+          if(this.people[i].notifyType !== notifyType) return "";
+        }
+        return "check";//代表全都有找到
+      },
+      first_click: function(notifyType){
+        for(var i=0;i<this.people.length;i++){
+          this.people[i].notifyType = notifyType
+        }
+      },
+      tick_click : function (item,notifyType){
+          item.notifyType = notifyType;
+      },
+      tick_check : function(item,notifyType){
+          if(!item) return "";
+          if(item.notifyType == notifyType){//代表勾選
+             return "tick";
+          }else{
+             return "un_tick";
+          }
+      },
+      removeItem: function (index) {
+          this.people.splice(index, 1);
+      },
+      removeAll : function(){
+          this.people = [];
+      },
+      submitBtn: function(e){
+        e.preventDefault();//停止事件的預設動作
+        console.log(this.people);//ajax 送給後端
+      }
+    }
+  }).mount('#msgSend');
+
+</script>
+</body>
+
+</html>
