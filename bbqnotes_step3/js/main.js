@@ -124,7 +124,7 @@ function set_animation(){
       start: 0,
       end: "max",
       onUpdate: self => {
-//        console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+        console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
 //        
         set_color(self.progress.toFixed(2) * 100)
       }
